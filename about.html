@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>m2</title>
+
+	<!-- normalize -->
+	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
+	<!-- fontawesome -->
+	<script src="https://kit.fontawesome.com/1463ad3125.js" crossorigin="anonymous"></script>
+	<!-- swiper -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+	<!-- style -->
+
+	<link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+
+	<header class="header" id="header" aria-label="Шапка сайту">
+	<div class="header__container container">
+		<div class="header__logo-row">
+			<div class="header__logo-block">
+				<a href="./index.html" class="header__logo-link" aria-label="Перейти на головну сторінку">
+					<img src="./img/logo.svg" alt="Логотип компанії" class="header__logo-img">
+				</a>
+			</div>
+
+			<div class="header__menu-soc">
+				<ul class="header__menu-social menu-social" aria-label="Соціальні мережі">
+	<li class="menu-social__item">
+		<a href="#" class="menu-social__link" aria-label="Facebook">
+			<img src="./img/soc/facebook.svg" alt="Facebook" class="menu-social__icon facebook">
+		</a>
+	</li>
+	<li class="menu-social__item">
+		<a href="#" class="menu-social__link" aria-label="Instagram">
+			<img src="./img/soc/instagram.svg" alt="Instagram" class="menu-social__icon instagram">
+		</a>
+	</li>
+	<li class="menu-social__item">
+		<a href="https://www.tiktok.com/@volodymyrmaksymyk" class="menu-social__link" aria-label="TikTok">
+			<img src="./img/soc/tik-tok.svg" alt="TikTok" class="menu-social__icon tiktok">
+		</a>
+	</li>
+	<li class="menu-social__item">
+		<a href="#" class="menu-social__link" aria-label="Viber">
+			<img src="./img/soc/viber.svg" alt="Viber" class="menu-social__icon viber">
+		</a>
+	</li>
+	<li class="menu-social__item">
+		<a href="#" class="menu-social__link" aria-label="WhatsApp">
+			<img src="./img/soc/whatsapp.svg" alt="WhatsApp" class="menu-social__icon whatsapp">
+		</a>
+	</li>
+	<li class="menu-social__item">
+		<a href="#" class="menu-social__link" aria-label="YouTube">
+			<img src="./img/soc/youtube.svg" alt="YouTube" class="menu-social__icon youtube">
+		</a>
+	</li>
+</ul>
+			</div>
+
+
+			<div class="header__location location" aria-label="Місцезнаходження">
+				<div class="location__city">
+					<i class="location__icon fa-solid fa-location-dot" aria-hidden="true"></i>
+					Ваше місто: <span id="user-city" class="location__city-name">Львів</span>
+				</div>
+				<div class="location__city">
+					<i class="location__icon fa-solid fa-location-dot" aria-hidden="true"></i>
+					<a href="./contacts.html#contact__message" class="location__map-link" aria-label="Переглянути карту об'єктів">
+						Карта об'єктів
+					</a>
+				</div>
+			</div>
+
+			<div class="header__work work" aria-label="Години роботи">
+				<div class="header__work-time">Пн. – Пт.: з 9:00 до 20:00</div>
+				<div class="header__work-time">Сб.: з 10:00 до 16:00</div>
+			</div>
+
+			<div class="header__language language" aria-label="Вибір мови сайту">
+				<select name="language" id="language-select" class="language__select">
+					<option class="language__option" value="en">Англійська</option>
+					<option class="language__option" value="pl">Польська</option>
+					<option class="language__option" value="uk" selected>Українська</option>
+					<option class="language__option" value="ru">Російська</option>
+				</select>
+			</div>
+
+			<div class="header__burger">
+				<i class="fa-solid header__burger-bars fa-bars"></i>
+				<i class="fa-solid header__burger-x fa-x"></i>
+			</div>
+		</div>
+
+	</div>
+	<nav class="header__navbar navbar" aria-label="Головне меню навігації">
+		<ul class="navbar__menu menu-row">
+			<li class="menu-row__item">
+				<a class="menu-row__link" href="./about.html">Про компанію</a>
+			</li>
+			<li class="menu-row__item">
+				<a class="menu-row__link" href="./services.html">Наші послуги</a>
+			</li>
+			<li class="menu-row__item">
+				<a class="menu-row__link" href="./portfolio.html">Портфоліо проєктів</a>
+			</li>
+			<!-- <li class="menu-row__item">
+					<a class="menu-row__link" href="./reviews.html">Відгуки клієнтів</a>
+				</li> -->
+			<li class="menu-row__item">
+				<a class="menu-row__link" href="./prices.html">Ціни на послуги</a>
+			</li>
+			<li class="menu-row__item">
+				<a class="menu-row__link" href="./contacts.html">Контактна інформація</a>
+			</li>
+		</ul>
+	</nav>
+
+
+
+</header>
+
+	<section class="about section">
+	<div class="about__container container">
+		<div class="about__wrapper">
+
+			<div class="about__img">
+				<img src="./img/building.jpg" alt="фото комранії" class="about__image">
+			</div>
+
+			<div class="about__desc">
+				<p class="about__description"><span class="about__desc-m2 m2">М²</span>-компанія, яка динамічно розвивається та
+					забезпечує надання високої якості послуг з проектування, дизайну та ремонту як житлових, так і комерційних
+					приміщень. Ми працюємо як з приватними замовниками, так і з бізнесом, надаючи послуги по [місто/регіон або
+					Польщі загалом].
+				</p>
+
+
+				<p class="about__description">
+					Наша компанія — це команда професіоналів, яка об’єднала досвід, креативність та сучасний підхід, щоб
+					створювати якісні, надійні та естетичні рішення у сфері будівництва, ремонту, дизайну й проєктування.
+				</p>
+			</div>
+
+		</div>
+	</div>
+
+
+	<div class="about__title-block">
+		<h2 class="about__title">
+			<i class="about__title-quote fa-solid fa-quote-left"></i>
+			<img src="./img/logo.svg" alt="метер квадрадний" class="about__image-text">
+			— там, де ідея стає реальністю
+			<i class="about__title-quote fa-solid fa-quote-right"></i>
+		</h2>
+	</div>
+
+	<div class="about__container container">
+		<div class="about__wrapper">
+
+			<div class="about__desc">
+				<p class="about__description">Ми працюємо з проєктами будь-якої складності — від косметичного ремонту до
+					повномасштабного будівництва та створення унікального інтер’єру. Наш головний пріоритет — задоволення потреб
+					клієнта та перевершення його очікувань.</p>
+
+				<p class="about__description">
+					З моменту заснування компанії ми встигли реалізувати десятки успішних проєктів, здобувши репутацію надійного
+					партнера. Ми ретельно підходимо до кожного етапу: від планування до фінального оздоблення, забезпечуючи
+					якість, дотримання термінів та прозорість на всіх рівнях співпраці.
+				</p>
+
+				<p class="about__description">
+					Обираючи нас — ви обираєте професіоналізм, відповідальність і результат, яким можна пишатися.
+				</p>
+			</div>
+		</div>
+	</div>
+
+
+	<section class="services section">
+	<div class="services__container container">
+		<div class="services__blocs">
+			<h2 class="services__title">Наші послуги</h2>
+			<p class="services__desc">Компанія <span class="m2">м²</span> надає послуги з ремонту, дизайну, будівництва та проектування будівель
+				на
+				території Польщі.</p>
+			<div class="services__blocks-list">
+				<a href="./services.html" class="services__block-item">
+					<div class="services__img">
+						<img src="./img/houses-3.jpg" alt="" class="services__image">
+					</div>
+					<p class="services__text">Ремонт під ключ</p>
+					<span class="services__line"></span>
+				</a>
+
+				<a href="./services.html" class="services__block-item">
+					<div class="services__img">
+						<img src="./img/img-5.jpg" alt="" class="services__image">
+					</div>
+
+					<p class="services__text">Індивідуальний дизайн</p>
+					<span class="services__line"></span>
+				</a>
+
+				<a href="./services.html" class="services__block-item">
+					<div class="services__img">
+						<img src="./img/img-4.png" alt="" class="services__image">
+					</div>
+					<p class="services__text">Проектирование зданий</p>
+					<span class="services__line"></span>
+				</a>
+
+				<a href="./services.html" class="services__block-item">
+					<div class="services__img">
+						<img src="./img/img-1.jpg" alt="" class="services__image">
+					</div>
+					<p class="services__text">Будівництво</p>
+					<span class="services__line"></span>
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+	<div class="about__container container">
+		<div class="about__wrapper">
+
+			<div class="about__block">
+				<div class="about__block-row">
+					<h4 class="about__block-col">Будівництво <span class="about__block-red">:</span></h4>
+					<ul class="about__block-ul">
+						<li class="about__block-li">Зведення приватних будинків і котеджів</li>
+						<li class="about__block-li">Комерційне та промислове будівництво</li>
+						<li class="about__block-li">Монолітні та каркасні конструкції</li>
+						<li class="about__block-li">Фундаменти, дах, фасадні роботи</li>
+					</ul>
+				</div>
+
+				<div class="about__block-row">
+					<h4 class="about__block-col">Ремонтні роботи <span class="about__block-red">:</span></h4>
+					<ul class="about__block-ul">
+						<li class="about__block-li">Комплексний ремонт квартир, будинків, офісів</li>
+						<li class="about__block-li">Косметичний та капітальний ремонт</li>
+						<li class="about__block-li">Вирівнювання стін і стелі, укладка підлогових покриттів</li>
+						<li class="about__block-li">Монтаж сантехніки та електрики</li>
+					</ul>
+				</div>
+
+				<div class="about__block-row">
+					<h4 class="about__block-col">Дизайн інтер’єру <span class="about__block-red">:</span></h4>
+					<ul class="about__block-ul">
+						<li class="about__block-li">Індивідуальні дизайн-проєкти</li>
+						<li class="about__block-li">3D-візуалізація приміщень</li>
+						<li class="about__block-li">Підбір матеріалів, меблів і декору</li>
+						<li class="about__block-li">Авторський супровід</li>
+					</ul>
+				</div>
+
+				<div class="about__block-row">
+					<h4 class="about__block-col">Проєктні роботи<span class="about__block-red">:</span></h4>
+					<ul class="about__block-ul">
+						<li class="about__block-li">Архітектурне проєктування житлових і комерційних об’єктів</li>
+						<li class="about__block-li">Інженерні мережі та комунікації</li>
+						<li class="about__block-li">Узгодження документації</li>
+						<li class="about__block-li">Енергоефективні рішення</li>
+					</ul>
+				</div>
+
+				<div class="about__block-row">
+					<h4 class="about__block-col">Додаткові послуги <span class="about__block-red">:</span></h4>
+					<ul class="about__block-ul">
+						<li class="about__block-li">Демонтажні роботи</li>
+						<li class="about__block-li">Ландшафтний дизайн</li>
+						<li class="about__block-li">Технічний нагляд</li>
+						<li class="about__block-li">Консультації та оцінка проєктів</li>
+					</ul>
+				</div>
+			</div>
+
+			
+
+			<h2 class="about__subtitle">Переваги роботи з <span class="about__desc-m2 m2">м²</span>: </h2>
+
+			<div class="about__box">
+
+					<div class="about__box-col">
+						<h4 class="about__box-title">Досвід та професіоналізм</h4>
+						<p class="about__box-text">Багаторічна практика у сфері будівництва, ремонту та дизайну дозволяє нам
+							впевнено реалізовувати проєкти будь-якої складності.</p>
+					</div>
+
+					<div class="about__box-col">
+						<h4 class="about__box-title">Індивідуальний підхід</h4>
+						<p class="about__box-text">Кожен клієнт — унікальний. Ми уважно слухаємо ваші побажання та пропонуємо
+							рішення, які відповідають саме вашим потребам і бюджету.</p>
+					</div>
+
+					<div class="about__box-col">
+						<h4 class="about__box-title">Робота “під ключ”</h4>
+						<p class="about__box-text">Від ідеї до повної реалізації — ми беремо на себе всі етапи: проєктування,
+							виконання робіт, авторський нагляд і здачу об’єкта.</p>
+					</div>
+
+					<div class="about__box-col">
+						<h4 class="about__box-title">Якість і гарантії</h4>
+						<p class="about__box-text">Ми використовуємо лише перевірені матеріали та дотримуємося всіх технологічних
+							норм. На всі види робіт надаємо гарантію.</p>
+					</div>
+
+					<div class="about__box-col">
+						<h4 class="about__box-title">Дотримання термінів</h4>
+						<p class="about__box-text">Цінуємо ваш час. Завжди працюємо за узгодженим графіком та дотримуємось
+							дедлайнів.</p>
+					</div>
+
+					<div class="about__box-col">
+						<h4 class="about__box-title">Прозоре ціноутворення</h4>
+						<p class="about__box-text">Жодних прихованих витрат. Ви заздалегідь знаєте, за що платите, та отримуєте
+							чесну вартість без сюрпризів.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+	<footer class="footer">
+	<div class="footer__container container">
+		<div class="footer__columns">
+			<div class="footer__column">
+				<a href="#" class="footer__title">Компанія</a>
+				<ul class="footer__list">
+					<li class="footer__item"><a href="./about.html" class="footer__item-link">Про нас</a></li>
+					<li class="footer__item"><a href="./about.html" class="footer__item-link">Відео</a></li>
+					<li class="footer__item"><a href="./contacts.html#contact__message" class="footer__item-link">Карта
+							об’єктів</a></li>
+					<li class="footer__item"><a href="./about.html" class="footer__item-link">Вопроси и відповіді</a></li>
+				</ul>
+			</div>
+			<div class="footer__column">
+				<a href="#" class="footer__title">Послуги</a>
+				<ul class="footer__list">
+					<li class="footer__item"><a href="./portfolio.html" class="footer__item-link">Будівництво</a></li>
+					<li class="footer__item"><a href="./portfolio.html" class="footer__item-link">Дизайн</a></li>
+					<li class="footer__item"><a href="./portfolio.html" class="footer__item-link">Проектування</a></li>
+				</ul>
+			</div>
+			<div class="footer__column">
+				<a href="#" class="footer__title">Інформація</a>
+				<ul class="footer__list">
+					<li class="footer__item"><a href="./contacts.html" class="footer__item-link">Ціни</a></li>
+				</ul>
+			</div>
+			<div class="footer__column">
+				<a href="#" class="footer__title">Контакти</a>
+				<ul class="footer__list">
+					<li class="footer__item"><a class="footer__item-link" href="./contacts.html"><i
+								class="footer__icon fa-solid fa-phone"></i>+48 793 514 201</a></li>
+					<li class="footer__item">
+						<div class="footer__work">
+							<div class="footer__work-time">Пн. – Пт.: з 9:00 до 20:00</div>
+							<div class="footer__work-time">Сб.: з 10:00 до 16:00</div>
+						</div>
+					</li>
+					<li class="footer__item"><a class="footer__item-link" href="./contacts.html#contact__message"><i
+								class="footer__icon fa-solid fa-location-dot"></i>м.
+							Познань</a></li>
+					<li class="footer__item"><a class="footer__item-link" href="./contacts.html"><i
+								class="footer__icon fa-solid fa-envelope"></i>vova4vova@gmail.com</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="footer__bottom">
+			<div class="footer__left">
+				<p class="footer__left-text"> © 2023 Будівельна компанія <span class="footer__m2">м²</span>.</p>
+				<p class="footer__left-text"> Усі права захищено.</p>
+			</div>
+
+			<div class="footer__menu-soc">
+				<ul class="header__menu-social menu-social" aria-label="Соціальні мережі">
+	<li class="menu-social__item">
+		<a href="#" class="menu-social__link" aria-label="Facebook">
+			<img src="./img/soc/facebook.svg" alt="Facebook" class="menu-social__icon facebook">
+		</a>
+	</li>
+	<li class="menu-social__item">
+		<a href="#" class="menu-social__link" aria-label="Instagram">
+			<img src="./img/soc/instagram.svg" alt="Instagram" class="menu-social__icon instagram">
+		</a>
+	</li>
+	<li class="menu-social__item">
+		<a href="https://www.tiktok.com/@volodymyrmaksymyk" class="menu-social__link" aria-label="TikTok">
+			<img src="./img/soc/tik-tok.svg" alt="TikTok" class="menu-social__icon tiktok">
+		</a>
+	</li>
+	<li class="menu-social__item">
+		<a href="#" class="menu-social__link" aria-label="Viber">
+			<img src="./img/soc/viber.svg" alt="Viber" class="menu-social__icon viber">
+		</a>
+	</li>
+	<li class="menu-social__item">
+		<a href="#" class="menu-social__link" aria-label="WhatsApp">
+			<img src="./img/soc/whatsapp.svg" alt="WhatsApp" class="menu-social__icon whatsapp">
+		</a>
+	</li>
+	<li class="menu-social__item">
+		<a href="#" class="menu-social__link" aria-label="YouTube">
+			<img src="./img/soc/youtube.svg" alt="YouTube" class="menu-social__icon youtube">
+		</a>
+	</li>
+</ul>
+			</div>
+
+		</div>
+	</div>
+</footer>
+
+
+
+
+
+	<!-- swiper scripts -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<!-- scripts -->
+	<script src="./js/scripts.min.js"></script>
+
+</body>
+
+</html>
