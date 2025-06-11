@@ -131,10 +131,10 @@ const swiper = new Swiper(".main-swiper", {
 // work-p js //
 
 const workSwiper = new Swiper(".work-p__swiper", {
-  slidesPerView: 3, // кількість слайдів
+  slidesPerView: 3,
   loop: true,
   freeMode: true,
-  speed: 5000, // чим більше — тим плавніше
+  speed: 5000,
   allowTouchMove: false,
   autoplay: {
   delay: 0,
@@ -143,7 +143,37 @@ const workSwiper = new Swiper(".work-p__swiper", {
   },
 });
 
-// swiperEl.addEventListener("click", () => {
-//   workSwiper.autoplay.start();
-// });
+// furniture
+const swiperf = new Swiper(".furniture-swiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  loop: true,
+  freeMode: true,
+  speed: 5000,
+  allowTouchMove: false,
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: false,
+  },
+
+  pagination: {
+    el: ".furniture-swiper__pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    1440: {
+      slidesPerView: 5,
+    },
+    1024: {
+      slidesPerView: 4,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    600: {
+      slidesPerView: 2,
+    },
+  },
+});
 
