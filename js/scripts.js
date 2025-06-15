@@ -177,3 +177,14 @@ const swiperf = new Swiper(".furniture-swiper", {
   },
 });
 
+
+document.addEventListener("DOMContentLoaded", () => {
+  const switcher = document.getElementById("language-switcher");
+  const currentLang = localStorage.getItem("lang") || "en";
+  switcher.value = currentLang;
+  loadLang(currentLang);
+
+	console.log('EN')
+
+
+});

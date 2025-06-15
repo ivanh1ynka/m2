@@ -62,21 +62,21 @@
 
 
 			<div class="header__location location" aria-label="Місцезнаходження">
-				<div class="location__city">
+				<div class="location__city" data-i18n="location__city">
 					<i class="location__icon fa-solid fa-location-dot" aria-hidden="true"></i>
-					Ваше місто: <span id="user-city" class="location__city-name">Львів</span>
+					Ваше місто: <span id="user-city" class="location__city-name" data-i18n="location__city-name">Львів</span>
 				</div>
 				<div class="location__city">
 					<i class="location__icon fa-solid fa-location-dot" aria-hidden="true"></i>
-					<a href="./contacts.html#contact__message" class="location__map-link" aria-label="Переглянути карту об'єктів">
+					<a href="./contacts.html#contact__message" class="location__map-link" aria-label="Переглянути карту об'єктів" data-i18n="location__map-link">
 						Карта об'єктів
 					</a>
 				</div>
 			</div>
 
 			<div class="header__work work" aria-label="Години роботи">
-				<div class="header__work-time">Пн. – Пт.: з 9:00 до 20:00</div>
-				<div class="header__work-time">Сб.: з 10:00 до 16:00</div>
+				<div class="header__work-time" data-i18n="header__work-time-1">Пн. – Пт.: з 9:00 до 20:00</div>
+				<div class="header__work-time" data-i18n="header__work-time-2">Сб.: з 10:00 до 16:00</div>
 			</div>
 
 			<div class="header__language language" aria-label="Вибір мови сайту">
@@ -123,6 +123,765 @@
 </header>
 
 
+	<setion class="prices section">
+	<div class="container prices__container">
+		<div class="prices__desc">
+			<h2 class="prices__title">Ціни на будівельні послуги — Ремонт, дизайн, проєктування <span
+					class="about__desc-m2 m2">М²</span></h2>
+			<p class="prices__text">Детальний прайс на ремонтні та будівельні послуги: малярні роботи, плитка, гіпсокартон,
+				сантехніка, електрика та інше. Прозорі ціни та якість, підтверджена досвідом.</p>
+		</div>
+	</div>
+	<div class="prices__table-blocks">
+
+		<div class="prices__table-block prices__painting">
+			<h2 class="prices__table-title">Роботи малярські</h2>
+			<table class="prices__table">
+				<tbody class="prices__tbody">
+					<tr class="prices__tr">
+						<th class="prices__th">№</th>
+						<th class="prices__th">Види робіт</th>
+						<th class="prices__th">Од.</th>
+						<th class="prices__th">Ціна</th>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">1</td>
+						<td class="prices__td">Виконання технічного проекту на ремонт квартири</td>
+						<td class="prices__td">м2</td>
+						<td class="prices__td">250 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">2</td>
+						<td class="prices__td">Підготовка об'єкта до ремонту</td>
+						<td class="prices__td">м2</td>
+						<td class="prices__td">від 10 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">3</td>
+						<td class="prices__td">Шпаклювання 2 рази (шпаклівка гіпсова)</td>
+						<td class="prices__td">м2</td>
+						<td class="prices__td">від 45 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">4</td>
+						<td class="prices__td">Ґрунтування стін, стель, підлог</td>
+						<td class="prices__td">м2</td>
+						<td class="prices__td">від 10 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">5</td>
+						<td class="prices__td">Покраска ґрунтувальною фарбою</td>
+						<td class="prices__td">м2</td>
+						<td class="prices__td">від 15 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">6</td>
+						<td class="prices__td">Покраска водоемульсійною фарбою (2 шари)</td>
+						<td class="prices__td">м2</td>
+						<td class="prices__td">від 25 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">7</td>
+						<td class="prices__td">Розділення кольорів</td>
+						<td class="prices__td">м/п</td>
+						<td class="prices__td">від 5 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">8</td>
+						<td class="prices__td">Покраска вікон</td>
+						<td class="prices__td">м2</td>
+						<td class="prices__td">від 150 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">9</td>
+						<td class="prices__td">Покраска дверей</td>
+						<td class="prices__td">шт.</td>
+						<td class="prices__td">від 150 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">10</td>
+						<td class="prices__td">Покраска радіаторів</td>
+						<td class="prices__td">ребро</td>
+						<td class="prices__td">25 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">11</td>
+						<td class="prices__td">Покраска труб</td>
+						<td class="prices__td">м/п</td>
+						<td class="prices__td">від 25 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">12</td>
+						<td class="prices__td">Здирання стін і стель</td>
+						<td class="prices__td">м2</td>
+						<td class="prices__td">від 25 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">13</td>
+						<td class="prices__td">Поклейка шпалер</td>
+						<td class="prices__td">м2</td>
+						<td class="prices__td">від 80 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">14</td>
+						<td class="prices__td">Демонтаж старих шпалер</td>
+						<td class="prices__td">м2</td>
+						<td class="prices__td">від 20 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">15</td>
+						<td class="prices__td">Проходження кутів акрилом</td>
+						<td class="prices__td">м/п</td>
+						<td class="prices__td">7 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">16</td>
+						<td class="prices__td">Поправки</td>
+						<td class="prices__td">м2</td>
+						<td class="prices__td">від 20 зл.</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div class="prices__table-block prices__drywall">
+			<h2 class="prices__table-title">Роботи з гіпсокартоном</h2>
+			<table class="prices__table">
+				<tbody class="prices__tbody">
+					<tr class="prices__tr">
+						<th class="prices__th">№</th>
+						<th class="prices__th">Види робіт</th>
+						<th class="prices__th">Од.</th>
+						<th class="prices__th">Ціна</th>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">1</td>
+						<td class="prices__td">Монтаж стелі з ГК</td>
+						<td class="prices__td">м2</td>
+						<td class="prices__td">від 120 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">2</td>
+						<td class="prices__td">Монтаж перестінків з ГК (1 шар) + вата</td>
+						<td class="prices__td">м2</td>
+						<td class="prices__td">від 130 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">3</td>
+						<td class="prices__td">Монтаж перестінків з ГК (2 шари) + вата</td>
+						<td class="prices__td">м2</td>
+						<td class="prices__td">від 150 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">4</td>
+						<td class="prices__td">Поклейка ГК на стіни</td>
+						<td class="prices__td">м2</td>
+						<td class="prices__td">від 90 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">5</td>
+						<td class="prices__td">Монтаж ГК на стіни (каркас)</td>
+						<td class="prices__td">м2</td>
+						<td class="prices__td">від 70 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">6</td>
+						<td class="prices__td">Монтаж стелі з ГК в 2 і більше рівнів</td>
+						<td class="prices__td">м2</td>
+						<td class="prices__td">від 175 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">7</td>
+						<td class="prices__td">Утеплення мансарди (вата, паробар'єр, каркас, ГК)</td>
+						<td class="prices__td">м2</td>
+						<td class="prices__td">від 200 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">8</td>
+						<td class="prices__td">Заделка швів на ГК</td>
+						<td class="prices__td">м/п</td>
+						<td class="prices__td">20 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">9</td>
+						<td class="prices__td">Шпаклювання швів на ГК</td>
+						<td class="prices__td">м/п</td>
+						<td class="prices__td">20 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">10</td>
+						<td class="prices__td">Монтаж коробів</td>
+						<td class="prices__td">м/п</td>
+						<td class="prices__td">від 150 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">11</td>
+						<td class="prices__td">Шпаклівка стін 2 рази</td>
+						<td class="prices__td">м2</td>
+						<td class="prices__td">від 45 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">12</td>
+						<td class="prices__td">Монтаж перфо-кутників</td>
+						<td class="prices__td">м/п</td>
+						<td class="prices__td">від 20 зл.</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div class="prices__table-block prices__tiler">
+			<h2 class="prices__table-title">Роботи плиточників</h2>
+			<table class="prices__table">
+				<tbody class="prices__tbody">
+					<tr class="prices__tr">
+						<th class="prices__th">№</th>
+						<th class="prices__th">Види робіт</th>
+						<th class="prices__th">Од.</th>
+						<th class="prices__th">Ціна</th>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">1</td>
+						<td class="prices__td">Демонтаж плитки + виніс в контейнер з ліфтом</td>
+						<td class="prices__td">м2</td>
+						<td class="prices__td">від 40 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">2</td>
+						<td class="prices__td">Демонтаж плитки + виніс в контейнер без ліфта</td>
+						<td class="prices__td">м2</td>
+						<td class="prices__td">від 65 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">3</td>
+						<td class="prices__td">Вирівнювання стін і підлоги під плитку</td>
+						<td class="prices__td">м2</td>
+						<td class="prices__td">від 40 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">4</td>
+						<td class="prices__td">Поклейка плитки 10×10 - 15×15 см</td>
+						<td class="prices__td">м2</td>
+						<td class="prices__td">від 175 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">5</td>
+						<td class="prices__td">Поклейка плитки 30 см - 60 см</td>
+						<td class="prices__td">м2</td>
+						<td class="prices__td">від 140 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">6</td>
+						<td class="prices__td">Поклейка плитки 60 см - 120 см</td>
+						<td class="prices__td">м2</td>
+						<td class="prices__td">від 175 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">7</td>
+						<td class="prices__td">Поклейка каменю</td>
+						<td class="prices__td">м2</td>
+						<td class="prices__td">від 175 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">8</td>
+						<td class="prices__td">Поклейка мозаїки</td>
+						<td class="prices__td">м/п</td>
+						<td class="prices__td">від 250 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">9</td>
+						<td class="prices__td">Поклейка цоколів з порізкою</td>
+						<td class="prices__td">м/п</td>
+						<td class="prices__td">від 50 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">10</td>
+						<td class="prices__td">Поклейка готових цоколів</td>
+						<td class="prices__td">м/п</td>
+						<td class="prices__td">від 30 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">11</td>
+						<td class="prices__td">Укладання керамограніту на сходи (ступінь)</td>
+						<td class="prices__td">м2</td>
+						<td class="prices__td">від 170 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">12</td>
+						<td class="prices__td">Укладання керамограніту на сходи (підложка)</td>
+						<td class="prices__td">м2</td>
+						<td class="prices__td">від 170 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">13</td>
+						<td class="prices__td">Поклейка плитки-декор</td>
+						<td class="prices__td">м/п</td>
+						<td class="prices__td">від 60 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">14</td>
+						<td class="prices__td">Отвори в керамічній плитці</td>
+						<td class="prices__td">шт.</td>
+						<td class="prices__td">від 35 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">15</td>
+						<td class="prices__td">Отвори в (невказано матеріал)</td>
+						<td class="prices__td">шт.</td>
+						<td class="prices__td">від 60 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">16</td>
+						<td class="prices__td">Отвори в камені</td>
+						<td class="prices__td">шт.</td>
+						<td class="prices__td">від 70 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">17</td>
+						<td class="prices__td">Гідроізоляція</td>
+						<td class="prices__td">м2</td>
+						<td class="prices__td">від 40 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">18</td>
+						<td class="prices__td">Поклейка імітації цегли + затирка</td>
+						<td class="prices__td">м2</td>
+						<td class="prices__td">від 150 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">19</td>
+						<td class="prices__td">Шліфування кутів 45°</td>
+						<td class="prices__td">м/п</td>
+						<td class="prices__td">від 80 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">20</td>
+						<td class="prices__td">Монтаж кутників, алюмінієвих планок</td>
+						<td class="prices__td">м/п</td>
+						<td class="prices__td">від 35 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">21</td>
+						<td class="prices__td">Монтаж ревізійного люка з плитки</td>
+						<td class="prices__td">шт.</td>
+						<td class="prices__td">від 105 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">22</td>
+						<td class="prices__td">Виготовлення і монтаж полиці з плитки</td>
+						<td class="prices__td">шт.</td>
+						<td class="prices__td">від 230 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">23</td>
+						<td class="prices__td">Обмуровка ванни</td>
+						<td class="prices__td">шт.</td>
+						<td class="prices__td">від 450 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">24</td>
+						<td class="prices__td">Обмуровка піддона для душу</td>
+						<td class="prices__td">шт.</td>
+						<td class="prices__td">від 230 зл.</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div class="prices__table-block prices__plaster ">
+			<h2 class="prices__table-title">Кам'яна кладка та штукатурка</h2>
+			<table class="prices__table">
+				<tbody class="prices__tbody">
+					<tr class="prices__tr">
+						<th class="prices__th">№</th>
+						<th class="prices__th">Види робіт</th>
+						<th class="prices__th">Од.</th>
+						<th class="prices__th">Ціна</th>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">1</td>
+						<td class="prices__td">Штукатурка стін гіпсова</td>
+						<td class="prices__td">м2</td>
+						<td class="prices__td">від 45 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">2</td>
+						<td class="prices__td">Установка кутників штукатурних</td>
+						<td class="prices__td">м/п</td>
+						<td class="prices__td">30 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">3</td>
+						<td class="prices__td">Установка штукатурних маяків</td>
+						<td class="prices__td">м/п</td>
+						<td class="prices__td">20 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">4</td>
+						<td class="prices__td">Штукатурка відкосів віконних</td>
+						<td class="prices__td">м/п</td>
+						<td class="prices__td">70 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">5</td>
+						<td class="prices__td">Демонтаж перестінків</td>
+						<td class="prices__td">м2</td>
+						<td class="prices__td">від 105 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">6</td>
+						<td class="prices__td">Занос матеріалу</td>
+						<td class="prices__td">100 кг</td>
+						<td class="prices__td">100 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">7</td>
+						<td class="prices__td">Демонтаж штукатурки</td>
+						<td class="prices__td">м2</td>
+						<td class="prices__td">від 35 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">8</td>
+						<td class="prices__td">Заделка штроб</td>
+						<td class="prices__td">м/п</td>
+						<td class="prices__td">від 25 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">9</td>
+						<td class="prices__td">Самовирівнююча підлога</td>
+						<td class="prices__td">м2</td>
+						<td class="prices__td">від 50 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">10</td>
+						<td class="prices__td">Виконання стяжки</td>
+						<td class="prices__td">м2</td>
+						<td class="prices__td">від 60 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">11</td>
+						<td class="prices__td">Кладка перестінків товщиною до 120 мм</td>
+						<td class="prices__td">м2</td>
+						<td class="prices__td">від 100 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">12</td>
+						<td class="prices__td">Кладка склоблоків</td>
+						<td class="prices__td">м2</td>
+						<td class="prices__td">від 230 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">13</td>
+						<td class="prices__td">Демонтаж дверей</td>
+						<td class="prices__td">шт.</td>
+						<td class="prices__td">від 100 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">14</td>
+						<td class="prices__td">Монтаж дверей внутрішніх</td>
+						<td class="prices__td">шт.</td>
+						<td class="prices__td">від 400 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">15</td>
+						<td class="prices__td">Монтаж дверей зовнішніх</td>
+						<td class="prices__td">шт.</td>
+						<td class="prices__td">від 500 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">16</td>
+						<td class="prices__td">Монтаж підвіконь внутрішніх</td>
+						<td class="prices__td">м/п</td>
+						<td class="prices__td">від 100 зл.</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div class="prices__table-block prices__installation">
+			<h2 class="prices__table-title">Роботи з підлогою, монтаж порогів, плінтусів і т.д.</h2>
+			<table class="prices__table">
+				<tbody class="prices__tbody">
+					<tr class="prices__tr">
+						<th class="prices__th">№</th>
+						<th class="prices__th">Види робіт</th>
+						<th class="prices__th">Од.</th>
+						<th class="prices__th">Ціна</th>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">1</td>
+						<td class="prices__td">Демонтаж старого паркету</td>
+						<td class="prices__td">м2</td>
+						<td class="prices__td">від 35 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">2</td>
+						<td class="prices__td">Демонтаж ковроліну</td>
+						<td class="prices__td">м2</td>
+						<td class="prices__td">від 35 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">3</td>
+						<td class="prices__td">Демонтаж лінолеуму</td>
+						<td class="prices__td">м2</td>
+						<td class="prices__td">від 35 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">4</td>
+						<td class="prices__td">Монтаж ковроліну</td>
+						<td class="prices__td">м2</td>
+						<td class="prices__td">від 50 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">5</td>
+						<td class="prices__td">Монтаж лінолеуму</td>
+						<td class="prices__td">м2</td>
+						<td class="prices__td">від 80 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">6</td>
+						<td class="prices__td">Укладання ламінату</td>
+						<td class="prices__td">м2</td>
+						<td class="prices__td">від 60 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">7</td>
+						<td class="prices__td">Укладання паркетної дошки (без клею)</td>
+						<td class="prices__td">м2</td>
+						<td class="prices__td">від 80 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">8</td>
+						<td class="prices__td">Укладання паркетної дошки (на клей)</td>
+						<td class="prices__td">м2</td>
+						<td class="prices__td">від 100 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">9</td>
+						<td class="prices__td">Монтаж паркету</td>
+						<td class="prices__td">м2</td>
+						<td class="prices__td">від 80 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">10</td>
+						<td class="prices__td">Циклювання + лакування</td>
+						<td class="prices__td">м2</td>
+						<td class="prices__td">від 120 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">11</td>
+						<td class="prices__td">Монтаж плінтусів</td>
+						<td class="prices__td">м2</td>
+						<td class="prices__td">від 35 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">12</td>
+						<td class="prices__td">Монтаж порогів</td>
+						<td class="prices__td">шт.</td>
+						<td class="prices__td">від 40 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">13</td>
+						<td class="prices__td">Монтаж поліуретанових багетів</td>
+						<td class="prices__td">м/п</td>
+						<td class="prices__td">від 80 зл.</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div class="prices__table-block prices__plumbing">
+			<h2 class="prices__table-title">Білий монтаж і сантехніка</h2>
+			<table class="prices__table">
+				<tbody class="prices__tbody">
+					<tr class="prices__tr">
+						<th class="prices__th">№</th>
+						<th class="prices__th">Види робіт</th>
+						<th class="prices__th">Од.</th>
+						<th class="prices__th">Ціна</th>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">1</td>
+						<td class="prices__td">Демонтаж точки водно-каналізаційної</td>
+						<td class="prices__td">шт.</td>
+						<td class="prices__td">80 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">2</td>
+						<td class="prices__td">Демонтаж ванни, душової кабіни, умивальника тощо</td>
+						<td class="prices__td">шт.</td>
+						<td class="prices__td">80 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">3</td>
+						<td class="prices__td">Точка водно-піддону для душової каналізаційна</td>
+						<td class="prices__td">шт.</td>
+						<td class="prices__td">від 650 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">4</td>
+						<td class="prices__td">Точка водно-каналізаційна</td>
+						<td class="prices__td">шт.</td>
+						<td class="prices__td">від 600 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">5</td>
+						<td class="prices__td">Точка опалення</td>
+						<td class="prices__td">шт.</td>
+						<td class="prices__td">від 300 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">6</td>
+						<td class="prices__td">Штроби під труби</td>
+						<td class="prices__td">м/п</td>
+						<td class="prices__td">від 40 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">7</td>
+						<td class="prices__td">Прокладка водяних трас</td>
+						<td class="prices__td">м/п</td>
+						<td class="prices__td">від 20 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">8</td>
+						<td class="prices__td">Монтаж стелажа під підвісний унітаз</td>
+						<td class="prices__td">шт.</td>
+						<td class="prices__td">від 300 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">9</td>
+						<td class="prices__td">Монтаж змішувача прихованого монтажу</td>
+						<td class="prices__td">шт.</td>
+						<td class="prices__td">від 300 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">10</td>
+						<td class="prices__td">Монтаж змішувача стандартного</td>
+						<td class="prices__td">шт.</td>
+						<td class="prices__td">від 150 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">11</td>
+						<td class="prices__td">Монтаж ванни</td>
+						<td class="prices__td">шт.</td>
+						<td class="prices__td">від 400 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">12</td>
+						<td class="prices__td">Монтаж умивальника, унітазу, біде</td>
+						<td class="prices__td">шт.</td>
+						<td class="prices__td">від 250 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">13</td>
+						<td class="prices__td">Монтаж піддону для душової кабіни</td>
+						<td class="prices__td">шт.</td>
+						<td class="prices__td">від 200 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">14</td>
+						<td class="prices__td">Монтаж душової кабіни</td>
+						<td class="prices__td">шт.</td>
+						<td class="prices__td">від 300 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">15</td>
+						<td class="prices__td">Монтаж радіатора</td>
+						<td class="prices__td">шт.</td>
+						<td class="prices__td">від 150 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">16</td>
+						<td class="prices__td">Монтаж скла для душової кабіни</td>
+						<td class="prices__td">шт.</td>
+						<td class="prices__td">від 200 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">17</td>
+						<td class="prices__td">Заделка силіконом примикань унітазу, ванни, душкабін</td>
+						<td class="prices__td">м/п</td>
+						<td class="prices__td">від 20 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">18</td>
+						<td class="prices__td">Монтаж дзеркала</td>
+						<td class="prices__td">м2</td>
+						<td class="prices__td">від 100 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">19</td>
+						<td class="prices__td">Монтаж скляних поличок</td>
+						<td class="prices__td">шт.</td>
+						<td class="prices__td">від 100 зл.</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div class="prices__table-block prices__electricity">
+			<h2 class="prices__table-title">Електрика</h2>
+			<table class="prices__table">
+				<tbody class="prices__tbody">
+					<tr class="prices__tr" class="prices__tr">
+						<th class="prices__th">№</th>
+						<th class="prices__th">Види робіт</th>
+						<th class="prices__th">Од.</th>
+						<th class="prices__th">Ціна</th>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">1</td>
+						<td class="prices__td">Точка електрична</td>
+						<td class="prices__td">шт.</td>
+						<td class="prices__td">від 140 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">2</td>
+						<td class="prices__td">Монтаж оцинкованого корита</td>
+						<td class="prices__td">м/п</td>
+						<td class="prices__td">від 30 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">3</td>
+						<td class="prices__td">Прокладка кабелю</td>
+						<td class="prices__td">м/п</td>
+						<td class="prices__td">від 5 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">4</td>
+						<td class="prices__td">Монтаж розеток і вимикачів</td>
+						<td class="prices__td">шт.</td>
+						<td class="prices__td">від 30 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">5</td>
+						<td class="prices__td">Монтаж світильників</td>
+						<td class="prices__td">шт.</td>
+						<td class="prices__td">від 60 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">6</td>
+						<td class="prices__td">Демонтаж точки електричної</td>
+						<td class="prices__td">шт.</td>
+						<td class="prices__td">від 80 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">7</td>
+						<td class="prices__td">Штроби під проводи</td>
+						<td class="prices__td">шт.</td>
+						<td class="prices__td">від 40 зл.</td>
+					</tr>
+					<tr class="prices__tr">
+						<td class="prices__td">8</td>
+						<td class="prices__td">Монтаж електрощитової</td>
+						<td class="prices__td">модуль</td>
+						<td class="prices__td">від 120 зл.</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+	</div>
+</setion>
 
 
 	<!-- ===== footer ===== -->
@@ -130,49 +889,66 @@
 	<div class="footer__container container">
 		<div class="footer__columns">
 			<div class="footer__column">
-				<a href="#" class="footer__title">Компанія</a>
+				<a href="#" class="footer__title" data-i18n="footer__title-1">Компанія</a>
 				<ul class="footer__list">
-					<li class="footer__item"><a href="./about.html" class="footer__item-link">Про нас</a></li>
-					<li class="footer__item"><a href="./about.html" class="footer__item-link">Відео</a></li>
-					<li class="footer__item"><a href="./contacts.html#contact__message" class="footer__item-link">Карта
+					<li class="footer__item"><a href="./about.html" class="footer__item-link" data-i18n="footer__item-link-1">Про
+							нас</a></li>
+					<li class="footer__item"><a href="./about.html" class="footer__item-link"
+							data-i18n="footer__item-link-2">Відео</a></li>
+					<li class="footer__item"><a href="./contacts.html#contact__message" class="footer__item-link"
+							data-i18n="footer__item-link-3">Карта
 							об’єктів</a></li>
-					<li class="footer__item"><a href="./about.html" class="footer__item-link">Питання та відповіді</a></li>
+					<li class="footer__item"><a href="./about.html" class="footer__item-link"
+							data-i18n="footer__item-link-4">Питання та відповіді</a></li>
 				</ul>
 			</div>
 			<div class="footer__column">
-				<a href="#" class="footer__title">Послуги</a>
+				<a href="#" class="footer__title" data-i18n="footer__title-2">Послуги</a>
 				<ul class="footer__list">
-					<li class="footer__item"><a href="./portfolio.html" class="footer__item-link">Будівництво</a></li>
-					<li class="footer__item"><a href="./portfolio.html" class="footer__item-link">Ремонтні роботи</a></li>
-					<li class="footer__item"><a href="./portfolio.html" class="footer__item-link">Дизайн</a></li>
-					<li class="footer__item"><a href="./portfolio.html" class="footer__item-link">Проектування</a></li>
+					<li class="footer__item"><a href="./portfolio.html" class="footer__item-link"
+							data-i18n="footer__item-link-5">Будівництво</a></li>
+					<li class="footer__item"><a href="./portfolio.html" class="footer__item-link"
+							data-i18n="footer__item-link-6">Ремонтні роботи</a></li>
+					<li class="footer__item"><a href="./portfolio.html" class="footer__item-link"
+							data-i18n="footer__item-link-7">Дизайн</a></li>
+					<li class="footer__item"><a href="./portfolio.html" class="footer__item-link"
+							data-i18n="footer__item-link-8">Проектування</a></li>
 				</ul>
 			</div>
 			<div class="footer__column">
-				<a href="#" class="footer__title">Інформація</a>
+				<a href="#" class="footer__title" data-i18n="footer__title-3">Інформація</a>
 				<ul class="footer__list">
-					<li class="footer__item"><a href="./contacts.html" class="footer__item-link">Ціни</a></li>
+					<li class="footer__item"><a href="./prices.html" class="footer__item-link"
+							data-i18n="footer__item-link-9">Ціни</a></li>
+					<li class="footer__item"><a href="./portfolio.html#furniture__section" class="footer__item-link"
+							data-i18n="footer__item-link-10">Меблі на
+							замовлення</a></li>
+					<li class="footer__item"><a href="./portfolio.html#work-p" class="footer__item-link"
+							data-i18n="footer__item-link-11">Оформіть
+							заявку</a></li>
 				</ul>
 			</div>
 			<div class="footer__column">
-				<a href="#" class="footer__title">Контакти</a>
+				<a href="#" class="footer__title" data-i18n="footer__title-4">Контакти</a>
 				<ul class="footer__list">
-					<li class="footer__item"><a class="footer__item-link" href="./contacts.html"><i
-								class="footer__icon fa-solid fa-phone"></i>+48 793 514 201</a></li>
+					<li class="footer__item"><a class="footer__item-link" data-i18n="footer__item-link-12"
+							href="./contacts.html"><i class="footer__icon fa-solid fa-phone"></i>+48 793 514 201</a></li>
 					<li class="footer__item">
 						<div class="footer__work">
-							<div class="footer__work-time">Пн. – Пт.: з 9:00 до 20:00</div>
-							<div class="footer__work-time">Сб.: з 10:00 до 16:00</div>
+							<div class="footer__work-time" data-i18n="footer__work-time-1">Пн. – Пт.: з 9:00 до 20:00</div>
+							<div class="footer__work-time" data-i18n="footer__work-time-2">Сб.: з 10:00 до 16:00</div>
 						</div>
 					</li>
-					<li class="footer__item"><a class="footer__item-link" href="./contacts.html#contact__message"><i
+					<li class="footer__item">
+						<a class="footer__item-link" data-i18n="footer__item-link-13" href="./contacts.html#contact__message"><i
 								class="footer__icon fa-solid fa-location-dot"></i>м.
-							Познань</a></li>
-					<li class="footer__item"><a class="footer__item-link" href="./contacts.html"><i
-								class="footer__icon fa-solid fa-envelope"></i>vova4vova@gmail.com</a>
+							Познань</a>
 					</li>
-					<li class="footer__item"><a class="footer__item-link" href="mailto:maximikremont@gmail.com"><i
-								class="footer__icon fa-solid fa-envelope"></i>Меблі на заказ</a>
+					<li class="footer__item"><a class="footer__item-link" data-i18n="footer__item-link-14"
+							href="./contacts.html"><i class="footer__icon fa-solid fa-envelope"></i>vova4vova@gmail.com</a>
+					</li>
+					<li class="footer__item"><a class="footer__item-link" data-i18n="footer__item-link-15"
+							href="mailto:maximikremont@gmail.com"><i class="footer__icon fa-solid fa-envelope"></i>Меблі на заказ</a>
 					</li>
 				</ul>
 			</div>
@@ -180,8 +956,9 @@
 
 		<div class="footer__bottom">
 			<div class="footer__left">
-				<p class="footer__left-text"> © 2023 Будівельна компанія <span class="footer__m2">м²</span>.</p>
-				<p class="footer__left-text"> Усі права захищено.</p>
+				<p class="footer__left-text" data-i18n="footer__left-text-1"> © 2023 Будівельна компанія <span
+						class="footer__m2">м²</span>.</p>
+				<p class="footer__left-text" data-i18n="footer__left-text-2"> Усі права захищено.</p>
 			</div>
 
 			<div class="footer__menu-soc">
