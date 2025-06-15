@@ -1859,44 +1859,44 @@ body.locked {
 }
 
 .prices__painting {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../../img/prices-1.png) center center/cover no-repeat;
-  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../../img/prices-1.png) center center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/prices-1.png) center center/cover no-repeat;
+  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/prices-1.png) center center/cover no-repeat;
   background-attachment: fixed;
 }
 
 .prices__drywall {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../../img/prices-2.jpg) center center/cover no-repeat;
-  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../../img/prices-2.jpg) center center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/prices-2.jpg) center center/cover no-repeat;
+  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/prices-2.jpg) center center/cover no-repeat;
   background-attachment: fixed;
 }
 
 .prices__tiler {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../../img/prices-3.jpg) center center/cover no-repeat;
-  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../../img/prices-3.jpg) center center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/prices-3.jpg) center center/cover no-repeat;
+  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/prices-3.jpg) center center/cover no-repeat;
   background-attachment: fixed;
 }
 
 .prices__plaster {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../../img/prices-4.webp) center center/cover no-repeat;
-  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../../img/prices-4.webp) center center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/prices-4.webp) center center/cover no-repeat;
+  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/prices-4.webp) center center/cover no-repeat;
   background-attachment: fixed;
 }
 
 .prices__installation {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../../img/prices-5.jpg) center center/cover no-repeat;
-  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../../img/prices-5.jpg) center center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/prices-5.jpg) center center/cover no-repeat;
+  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/prices-5.jpg) center center/cover no-repeat;
   background-attachment: fixed;
 }
 
 .prices__plumbing {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../../img/prices-6.jpg) center center/cover no-repeat;
-  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../../img/prices-6.jpg) center center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/prices-6.jpg) center center/cover no-repeat;
+  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/prices-6.jpg) center center/cover no-repeat;
   background-attachment: fixed;
 }
 
 .prices__electricity {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../../img/prices-7.jpg) center center/cover no-repeat;
-  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../../img/prices-7.jpg) center center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/prices-7.jpg) center center/cover no-repeat;
+  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/prices-7.jpg) center center/cover no-repeat;
   background-attachment: fixed;
 }
 
