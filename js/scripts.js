@@ -134,14 +134,15 @@ const workSwiper = new Swiper(".work-p__swiper", {
   slidesPerView: 3,
   loop: true,
   freeMode: true,
-  speed: 5000,
+  speed: 6000,
   allowTouchMove: false,
   autoplay: {
-  delay: 0,
-  disableOnInteraction: false,
-  pauseOnMouseEnter: false,
+    delay: 0,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: false,
   },
 });
+
 
 // furniture
 const swiperf = new Swiper(".furniture-swiper", {
@@ -149,7 +150,7 @@ const swiperf = new Swiper(".furniture-swiper", {
   spaceBetween: 30,
   loop: true,
   freeMode: true,
-  speed: 5000,
+  speed: 6000,
   allowTouchMove: false,
   autoplay: {
     delay: 0,

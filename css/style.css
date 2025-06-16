@@ -153,7 +153,7 @@ body.locked {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  gap: 10px;
+  gap: 5px;
 }
 
 .header__work {
@@ -189,7 +189,7 @@ body.locked {
 .header__work-time {
   color: #fff;
   font-size: 14px;
-  font-family: "Caveat", cursive;
+  font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 .header__navbar {
@@ -321,7 +321,7 @@ body.locked {
   font-size: 16px;
   font-weight: 600;
   line-height: 1.4;
-  font-family: "Caveat", cursive;
+  font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
   padding: 10px;
 }
 
@@ -361,7 +361,7 @@ body.locked {
   color: #e63f24;
   font-weight: 600;
   font-size: 14px;
-  font-family: "Caveat", cursive;
+  font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 .menu-row__link:hover {
@@ -493,7 +493,7 @@ body.locked {
   margin-left: -50px;
   padding-right: 20px;
   min-height: 120px;
-  font-family: "Caveat", cursive;
+  font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 18px;
   line-height: 1.2;
   color: #000;
@@ -587,7 +587,7 @@ body.locked {
   gap: 20px;
   font-size: 56px;
   color: #e63f24;
-  font-family: "Caveat", cursive;
+  font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 .about__title-quote {
@@ -709,7 +709,7 @@ body.locked {
   padding-left: 20px;
   font-size: 18px;
   color: #000;
-  font-family: "Caveat", cursive;
+  font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 .contact {
@@ -833,7 +833,7 @@ body.locked {
   text-align: center;
   font-size: 18px;
   color: #ccc;
-  font-family: "Caveat", cursive;
+  font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 .contact__text-color {
@@ -876,7 +876,7 @@ body.locked {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: "Caveat", cursive;
+  font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 .contact__right {
@@ -1248,7 +1248,7 @@ body.locked {
   font-size: 20px;
   color: #000;
   line-height: 1.4;
-  font-family: "Caveat", cursive;
+  font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 .work-p__block {
@@ -1327,7 +1327,7 @@ body.locked {
 }
 
 .work-p__span {
-  font-family: "Caveat", cursive;
+  font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
   color: #e63f24;
   font-size: 14px;
 }
@@ -1914,8 +1914,6 @@ body.locked {
       -ms-flex-align: start;
           align-items: flex-start;
   padding: 40px 0;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   gap: 20px;
 }
 
@@ -1928,7 +1926,6 @@ body.locked {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 20px;
-  min-width: 150px;
 }
 
 .footer__title {
@@ -1970,7 +1967,7 @@ body.locked {
       -ms-flex-align: center;
           align-items: center;
   gap: 15px;
-  font-family: "Caveat", cursive;
+  font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 .footer__item-link {
@@ -2037,13 +2034,15 @@ body.locked {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 10px;
 }
 
 .footer__left-text {
   color: #ccc;
   font-size: 14px;
-  font-family: "Caveat", cursive;
+  font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 .footer__m2 {
@@ -2343,6 +2342,14 @@ body {
   .prices__td:nth-child(4) {
     width: 100px;
   }
+
+  .footer__columns {
+    gap: 10px;
+  }
+
+  .footer__item-link {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -2549,6 +2556,8 @@ body {
   .footer__columns {
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     gap: 60px 40px;
   }
 
@@ -2578,12 +2587,20 @@ body {
     font-size: 18px;
   }
 
+  .advantages__desc {
+    font-size: 14px;
+  }
+
   .advantages__block-item {
     max-width: 300px;
   }
 
   .advantages__text {
     min-height: 60px;
+  }
+
+  .about__description {
+    font-size: 14px;
   }
 
   .about__title {
@@ -2686,6 +2703,10 @@ body {
     font-size: 18px;
   }
 
+  .services__desc {
+    font-size: 14px;
+  }
+
   .services__block-item {
     width: 150px;
     height: 260px;
@@ -2773,6 +2794,10 @@ body {
     font-size: 18px;
   }
 
+  .furniture__text {
+    font-size: 14px;
+  }
+
   .furniture__button {
     padding: 10px;
   }
@@ -2781,8 +2806,20 @@ body {
     font-size: 18px;
   }
 
+  .prices__text {
+    font-size: 14px;
+  }
+
+  .prices__table-title {
+    font-size: 14px;
+  }
+
   .prices__table-title {
     max-width: 350px;
+    font-size: 14px;
+  }
+
+  .prices__tr {
     font-size: 14px;
   }
 
@@ -2837,8 +2874,17 @@ body {
     min-width: 120px;
   }
 
+  .footer__title {
+    font-size: 14px;
+  }
+
+  .footer__item-link {
+    font-size: 12px;
+  }
+
   .footer__work-time {
-    margin-left: 20px;
+    margin-left: 10px;
+    font-size: 10px;
   }
 }
 
@@ -2945,11 +2991,7 @@ body {
     gap: 50px 20px;
   }
 
-  .footer__column {
-    min-width: 100px;
-  }
-
-  .footer__title {
-    font-size: 16px;
+  .footer__item-link {
+    font-size: 10px;
   }
 }
