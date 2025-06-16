@@ -418,7 +418,7 @@ body.locked {
   text-align: center;
   color: #fff;
   font-size: 20px;
-  font-family: "Caveat", cursive;
+  font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
   line-height: 1.2;
 }
 
@@ -557,7 +557,7 @@ body.locked {
   text-align: center;
   color: #fff;
   font-size: 20px;
-  font-family: "Caveat", cursive;
+  font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
   line-height: 1.2;
   color: #000;
   max-width: none;
@@ -1130,7 +1130,7 @@ body.locked {
   text-align: center;
   color: #fff;
   font-size: 20px;
-  font-family: "Caveat", cursive;
+  font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
   line-height: 1.2;
 }
 
@@ -1646,7 +1646,7 @@ body.locked {
   text-align: center;
   color: #fff;
   font-size: 20px;
-  font-family: "Caveat", cursive;
+  font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
   line-height: 1.2;
 }
 
@@ -1735,7 +1735,7 @@ body.locked {
   text-align: center;
   color: #fff;
   font-size: 20px;
-  font-family: "Caveat", cursive;
+  font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
   line-height: 1.2;
   padding-bottom: 20px;
   font-family: cursive;
@@ -1783,9 +1783,8 @@ body.locked {
   text-align: center;
   color: #fff;
   font-size: 20px;
-  font-family: "Caveat", cursive;
+  font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
   line-height: 1.2;
-  font-family: "Gabriela", serif;
   font-size: 20px;
   -moz-text-align-last: left;
        text-align-last: left;
@@ -1822,18 +1821,12 @@ body.locked {
   text-align: center;
   color: #fff;
   font-size: 20px;
-  font-family: "Caveat", cursive;
+  font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
   line-height: 1.2;
-  font-family: "Gabriela", serif;
   text-align: left;
   width: 100%;
   font-size: 18px;
   max-width: 1000px;
-}
-
-.prices__th,
-.prices__td {
-  font-family: cursive;
 }
 
 .prices__th:nth-child(1),

@@ -186,5 +186,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	console.log('EN')
 
-
+  switcher.addEventListener("change", (e) => {
+    const lang = e.target.value;
+    localStorage.setItem("lang", lang);
+    loadLang(lang);
+  });
 });
+
+function loadLang(lang) {
+  fetch("lang/content.json")
+    .then((res) => res.json())
+    .then((data) => {
+      document.querySelectorAll("[data-i18n]").forEach((el) => {
+        const key = el.getAttribute("data-i18n");
+        if (data[key] && data[key][lang]) {
+          el.textContent = data[key][lang];
+        }
+      });
+    });
+}
+
