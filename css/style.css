@@ -379,7 +379,7 @@ body.locked {
 }
 
 .advantages {
-  background: url(../img/frame-1.jpg) center center/cover no-repeat;
+  background: url(../img/frame/frame-1.jpg) center center/cover no-repeat;
   background-attachment: fixed;
 }
 
@@ -519,7 +519,6 @@ body.locked {
 
 .about__img {
   margin: 0 auto;
-  width: 75%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -533,6 +532,9 @@ body.locked {
 
 .about__image {
   width: 100%;
+  aspect-ratio: 16/10;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .about__desc {
@@ -567,11 +569,22 @@ body.locked {
 .about__desc-m2 {
   font-size: 28px;
   font-weight: 900;
+  font-family: "Gabriela", serif;
 }
 
 .about__title-block {
   background: url(../img/body.jpg) center center/cover no-repeat;
   padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
 }
 
 .about__title {
@@ -591,6 +604,7 @@ body.locked {
 }
 
 .about__title-quote {
+  color: #e63f24;
   font-size: 32px;
 }
 
@@ -927,13 +941,13 @@ body.locked {
 }
 
 .contact__button {
-  min-width: 190px;
+  min-width: 150px;
   padding: 20px;
   border-radius: 20px;
   background-color: #fff;
   color: #e63f24;
   border: 2px solid #e63f24;
-  font-family: "Caveat", cursive;
+  font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 18px;
   font-weight: 600;
   line-height: 1.4;
@@ -1008,13 +1022,13 @@ body.locked {
 }
 
 .portfolio__item {
-  min-width: 190px;
+  min-width: 150px;
   padding: 20px;
   border-radius: 20px;
   background-color: #fff;
   color: #e63f24;
   border: 2px solid #e63f24;
-  font-family: "Caveat", cursive;
+  font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 18px;
   font-weight: 600;
   line-height: 1.4;
@@ -1091,7 +1105,7 @@ body.locked {
 /* ==== services SECTION ==== */
 
 .services {
-  background: url(../img/frame-3.jpg) center center/cover no-repeat;
+  background: url(../img/frame/frame-3.jpg) center center/cover no-repeat;
   background-attachment: fixed;
 }
 
@@ -1138,8 +1152,6 @@ body.locked {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1151,7 +1163,6 @@ body.locked {
 
 .services__block-item {
   width: 255px;
-  height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1159,6 +1170,12 @@ body.locked {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 20px;
   padding: 15px;
   background: #fff;
@@ -1169,7 +1186,7 @@ body.locked {
 
 .services__img {
   width: 220px;
-  height: 240px;
+  aspect-ratio: 16/10;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1179,15 +1196,17 @@ body.locked {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  aspect-ratio: 9/10;
 }
 
 .services__image {
-  width: 100%;
-  height: 100%;
+  width: 220px;
+  aspect-ratio: 16/10;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .services__text {
+  width: 100%;
   height: 80px;
   padding: 20px 0;
   font-size: 16px;
@@ -1265,26 +1284,16 @@ body.locked {
 }
 
 .work-p__button {
-  min-width: 190px;
+  min-width: 150px;
   padding: 20px;
   border-radius: 20px;
   background-color: #fff;
   color: #e63f24;
   border: 2px solid #e63f24;
-  font-family: "Caveat", cursive;
+  font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 18px;
   font-weight: 600;
   line-height: 1.4;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 20px;
 }
 
 .work-p__button:hover {
@@ -1295,17 +1304,7 @@ body.locked {
   transition: 0.3s;
 }
 
-.work-p__button:hover .work-p__arrow {
-  color: #fff;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.work-p__arrow {
-  color: #e63f24;
-}
-
-.work-p__director {
+.work-p__box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1320,6 +1319,9 @@ body.locked {
       -ms-flex-align: end;
           align-items: flex-end;
   gap: 10px;
+}
+
+.work-p__director {
   font-weight: 700;
   font-family: "Gabriela", serif;
   font-size: 18px;
@@ -1334,6 +1336,7 @@ body.locked {
 
 .work-p__img {
   height: 300px;
+  aspect-ratio: 16/10;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -1404,8 +1407,7 @@ body.locked {
 
 .main-swiper {
   width: 100%;
-  height: 710px;
-  margin: 20px auto;
+  height: calc(100vh - 155px);
   overflow: hidden;
   cursor: pointer;
 }
@@ -1428,36 +1430,39 @@ body.locked {
           align-items: flex-start;
   gap: 20px;
   color: white;
+  aspect-ratio: 16/10;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .main-swiper__slide:nth-child(1) {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/img-1.jpg) center center/cover no-repeat;
-  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/img-1.jpg) center center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/img/img-1.jpg) center center/cover no-repeat;
+  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/img/img-1.jpg) center center/cover no-repeat;
 }
 
 .main-swiper__slide:nth-child(2) {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/frame-12.jpeg) center center/cover no-repeat;
-  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/frame-12.jpeg) center center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/frame/frame-12.jpeg) center center/cover no-repeat;
+  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/frame/frame-12.jpeg) center center/cover no-repeat;
 }
 
 .main-swiper__slide:nth-child(3) {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/frame-13.jpeg) center center/cover no-repeat;
-  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/frame-13.jpeg) center center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/frame/frame-13.jpeg) center center/cover no-repeat;
+  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/frame/frame-13.jpeg) center center/cover no-repeat;
 }
 
 .main-swiper__slide:nth-child(4) {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/img-7.jpg) center center/cover no-repeat;
-  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/img-7.jpg) center center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/img/img-7.jpg) center center/cover no-repeat;
+  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/img/img-7.jpg) center center/cover no-repeat;
 }
 
 .main-swiper__slide:nth-child(5) {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/img-2.png) center center/cover no-repeat;
-  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/img-2.png) center center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/img/img-2.png) center center/cover no-repeat;
+  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/img/img-2.png) center center/cover no-repeat;
 }
 
 .main-swiper__slide:nth-child(6) {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/img-3.png) center center/cover no-repeat;
-  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/img-3.png) center center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/img/img-3.png) center center/cover no-repeat;
+  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/img/img-3.png) center center/cover no-repeat;
 }
 
 .main-swiper__title {
@@ -1587,7 +1592,7 @@ body.locked {
 }
 
 .furniture {
-  background: url(../img/frame-1.jpg) center center/cover no-repeat;
+  background: url(../img/frame/frame-1.jpg) center center/cover no-repeat;
   background-attachment: fixed;
 }
 
@@ -1648,16 +1653,18 @@ body.locked {
   font-size: 20px;
   font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
   line-height: 1.2;
+  max-width: none;
+  width: 600px;
 }
 
 .furniture__button {
-  min-width: 190px;
+  min-width: 150px;
   padding: 20px;
   border-radius: 20px;
   background-color: #fff;
   color: #e63f24;
   border: 2px solid #e63f24;
-  font-family: "Caveat", cursive;
+  font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 18px;
   font-weight: 600;
   line-height: 1.4;
@@ -1682,14 +1689,9 @@ body.locked {
           user-select: none;
 }
 
-.furniture-swiper__slide {
-  width: 100%;
-  height: 100%;
-}
-
 .furniture-swiper__img {
   width: 100%;
-  height: 100%;
+  aspect-ratio: 16/10;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -1738,8 +1740,9 @@ body.locked {
   font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
   line-height: 1.2;
   padding-bottom: 20px;
-  font-family: cursive;
+  font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
   max-width: 600px;
+  line-height: 1.5;
 }
 
 .prices__table-blocks {
@@ -1786,8 +1789,7 @@ body.locked {
   font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
   line-height: 1.2;
   font-size: 20px;
-  -moz-text-align-last: left;
-       text-align-last: left;
+  text-align: left;
   width: 100%;
   padding-bottom: 20px;
   max-width: 1000px;
@@ -1831,12 +1833,12 @@ body.locked {
 
 .prices__th:nth-child(1),
 .prices__td:nth-child(1) {
-  width: 100px;
+  width: 50px;
 }
 
 .prices__th:nth-child(2),
 .prices__td:nth-child(2) {
-  width: 600px;
+  width: 750px;
 }
 
 .prices__th:nth-child(3),
@@ -1847,49 +1849,49 @@ body.locked {
 
 .prices__th:nth-child(4),
 .prices__td:nth-child(4) {
-  width: 200px;
+  width: 120px;
   text-align: right;
 }
 
 .prices__painting {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/prices-1.png) center center/cover no-repeat;
-  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/prices-1.png) center center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/prices/prices-1.png) center center/cover no-repeat;
+  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/prices/prices-1.png) center center/cover no-repeat;
   background-attachment: fixed;
 }
 
 .prices__drywall {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/prices-2.jpg) center center/cover no-repeat;
-  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/prices-2.jpg) center center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/prices/prices-2.jpg) center center/cover no-repeat;
+  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/prices/prices-2.jpg) center center/cover no-repeat;
   background-attachment: fixed;
 }
 
 .prices__tiler {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/prices-3.jpg) center center/cover no-repeat;
-  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/prices-3.jpg) center center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/prices/prices-3.jpg) center center/cover no-repeat;
+  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/prices/prices-3.jpg) center center/cover no-repeat;
   background-attachment: fixed;
 }
 
 .prices__plaster {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/prices-4.webp) center center/cover no-repeat;
-  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/prices-4.webp) center center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/prices/prices-4.webp) center center/cover no-repeat;
+  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/prices/prices-4.webp) center center/cover no-repeat;
   background-attachment: fixed;
 }
 
 .prices__installation {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/prices-5.jpg) center center/cover no-repeat;
-  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/prices-5.jpg) center center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/prices/prices-5.jpg) center center/cover no-repeat;
+  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/prices/prices-5.jpg) center center/cover no-repeat;
   background-attachment: fixed;
 }
 
 .prices__plumbing {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/prices-6.jpg) center center/cover no-repeat;
-  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/prices-6.jpg) center center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/prices/prices-6.jpg) center center/cover no-repeat;
+  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/prices/prices-6.jpg) center center/cover no-repeat;
   background-attachment: fixed;
 }
 
 .prices__electricity {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/prices-7.jpg) center center/cover no-repeat;
-  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/prices-7.jpg) center center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/prices/prices-7.jpg) center center/cover no-repeat;
+  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/prices/prices-7.jpg) center center/cover no-repeat;
   background-attachment: fixed;
 }
 
@@ -2037,6 +2039,10 @@ body.locked {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 10px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .footer__left-text {
@@ -2129,36 +2135,29 @@ body {
 
   .services__block-item {
     width: 220px;
-    height: 300px;
   }
 
   .services__img {
     width: 160px;
-    height: 240px;
+  }
+
+  .services__image {
+    width: 160px;
+  }
+
+  .services__text {
+    font-size: 14px;
+    height: 50px;
+    padding: 5px 0;
   }
 
   .main-swiper {
     height: 620px;
   }
 
-  .prices__th:nth-child(1),
-  .prices__td:nth-child(1) {
-    width: 100px;
-  }
-
   .prices__th:nth-child(2),
   .prices__td:nth-child(2) {
-    width: 540px;
-  }
-
-  .prices__th:nth-child(3),
-  .prices__td:nth-child(3) {
-    width: 100px;
-  }
-
-  .prices__th:nth-child(4),
-  .prices__td:nth-child(4) {
-    width: 200px;
+    width: 600px;
   }
 }
 
@@ -2263,17 +2262,18 @@ body {
 
   .services__block-item {
     width: 160px;
-    height: 265px;
     gap: 10px;
   }
 
   .services__img {
     width: 125px;
-    height: 160px;
+  }
+
+  .services__image {
+    width: 125px;
   }
 
   .services__text {
-    font-size: 14px;
     height: 50px;
     padding: 5px 0;
   }
@@ -2317,30 +2317,20 @@ body {
 
   .prices__table-title {
     max-width: 700px;
+    padding: 0;
+  }
+
+  .prices__table {
+    padding: 0;
   }
 
   .prices__tr {
     max-width: 700px;
   }
 
-  .prices__th:nth-child(1),
-  .prices__td:nth-child(1) {
-    width: 50px;
-  }
-
   .prices__th:nth-child(2),
   .prices__td:nth-child(2) {
-    width: 495px;
-  }
-
-  .prices__th:nth-child(3),
-  .prices__td:nth-child(3) {
-    width: 50px;
-  }
-
-  .prices__th:nth-child(4),
-  .prices__td:nth-child(4) {
-    width: 100px;
+    width: 440px;
   }
 
   .footer__columns {
@@ -2456,6 +2446,11 @@ body {
     gap: 30px;
   }
 
+  .contact__button {
+    padding: 10px;
+    font-size: 14px;
+  }
+
   .contact__map {
     width: 100%;
   }
@@ -2469,6 +2464,11 @@ body {
   }
 
   .portfolio__item {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .portfolio__item {
     font-size: 18px;
     padding: 10px;
     min-width: 150px;
@@ -2479,15 +2479,22 @@ body {
     grid-template-rows: repeat(4, 160px);
   }
 
+  .services__blocks-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
   .services__block-item {
     width: 220px;
-    height: 260px;
     gap: 10px;
   }
 
   .services__img {
     width: 180px;
-    height: 170px;
+  }
+
+  .services__image {
+    width: 180px;
   }
 
   .services__text {
@@ -2497,6 +2504,11 @@ body {
   .services__text::after {
     height: 3px;
     l: 0;
+  }
+
+  .work-p__button {
+    padding: 10px;
+    font-size: 14px;
   }
 
   .work-p__swiper-slide {
@@ -2512,6 +2524,11 @@ body {
 
   .main-swiper {
     height: 350px;
+  }
+
+  .furniture__button {
+    padding: 10px;
+    font-size: 14px;
   }
 
   .prices__text {
@@ -2652,20 +2669,12 @@ body {
     font-size: 14px;
   }
 
-  .contact__button {
-    padding: 10px;
-  }
-
   .contact__map {
     height: 40vh;
   }
 
   .portfolio__title {
     font-size: 18px;
-  }
-
-  .portfolio__item {
-    padding: 10px;
   }
 
   .portfolio__item {
@@ -2709,13 +2718,15 @@ body {
 
   .services__block-item {
     width: 150px;
-    height: 260px;
     gap: 10px;
   }
 
   .services__img {
     width: 120px;
-    height: 140px;
+  }
+
+  .services__image {
+    width: 120px;
   }
 
   .work-p__titler {
@@ -2734,13 +2745,8 @@ body {
     gap: 20px;
   }
 
-  .work-p__button {
-    padding: 10px;
-  }
-
   .work-p__img {
     height: 185px;
-    aspect-ratio: 7/4;
     margin: 0 auto;
   }
 
@@ -2796,10 +2802,6 @@ body {
 
   .furniture__text {
     font-size: 14px;
-  }
-
-  .furniture__button {
-    padding: 10px;
   }
 
   .prices__title {
@@ -2920,12 +2922,14 @@ body {
 
   .services__block-item {
     width: 140px;
-    height: 225px;
   }
 
   .services__img {
     width: 115px;
-    height: 120px;
+  }
+
+  .services__image {
+    width: 115px;
   }
 
   .work-p__img {
@@ -2970,7 +2974,7 @@ body {
 
   .prices__th:nth-child(2),
   .prices__td:nth-child(2) {
-    width: 185px;
+    width: 190px;
   }
 
   .prices__th:nth-child(3),

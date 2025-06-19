@@ -57,16 +57,16 @@
 
 
 			<div class="header__location location" aria-label="Місцезнаходження">
-				<div class="location__city" data-i18n="location__city">
+				<div class="location__city">
 					<i class="location__icon fa-solid fa-location-dot" aria-hidden="true"></i>
 					<a href="./contacts.html#contact__message" class="location__map-link" aria-label="Переглянути карту об'єктів"
-						data-i18n="location__map-link">
-						Познань
+						data-i18n="location__map-link-1">
+						Познань </a>
 				</div>
 				<div class="location__city">
 					<i class="location__icon fa-solid fa-location-dot" aria-hidden="true"></i>
 					<a href="./contacts.html#contact__message" class="location__map-link" aria-label="Переглянути карту об'єктів"
-						data-i18n="location__map-link">
+						data-i18n="location__map-link-2">
 						Карта об'єктів
 					</a>
 				</div>
@@ -79,10 +79,10 @@
 
 			<div class="header__language language" aria-label="Вибір мови сайту">
 				<select name="language" id="language-select" class="language__select">
-					<option class="language__option" value="en">Англійська</option>
-					<option class="language__option" value="pl">Польська</option>
-					<option class="language__option" value="uk" selected>Українська</option>
-					<option class="language__option" value="ru">Російська</option>
+					<option class="language__option" value="en">EN</option>
+					<option class="language__option" value="pl">PL</option>
+					<option class="language__option" value="uk">UA</option>
+					<option class="language__option" value="ru">RU</option>
 				</select>
 			</div>
 
@@ -96,22 +96,19 @@
 	<nav class="header__navbar navbar" aria-label="Головне меню навігації">
 		<ul class="navbar__menu menu-row">
 			<li class="menu-row__item">
-				<a class="menu-row__link" href="./about.html">Про компанію</a>
+				<a class="menu-row__link" href="./about.html" data-i18n="menu-row__link-1">Про компанію</a>
 			</li>
 			<li class="menu-row__item">
-				<a class="menu-row__link" href="./services.html">Наші послуги</a>
+				<a class="menu-row__link" href="./services.html" data-i18n="menu-row__link-2">Наші послуги</a>
 			</li>
 			<li class="menu-row__item">
-				<a class="menu-row__link" href="./portfolio.html">Портфоліо проєктів</a>
-			</li>
-			<!-- <li class="menu-row__item">
-					<a class="menu-row__link" href="./reviews.html">Відгуки клієнтів</a>
-				</li> -->
-			<li class="menu-row__item">
-				<a class="menu-row__link" href="./prices.html">Ціни на послуги</a>
+				<a class="menu-row__link" href="./portfolio.html" data-i18n="menu-row__link-3">Портфоліо проєктів</a>
 			</li>
 			<li class="menu-row__item">
-				<a class="menu-row__link" href="./contacts.html">Контактна інформація</a>
+				<a class="menu-row__link" href="./prices.html" data-i18n="menu-row__link-4">Ціни на послуги</a>
+			</li>
+			<li class="menu-row__item">
+				<a class="menu-row__link" href="./contacts.html" data-i18n="menu-row__link-5">Контактна інформація</a>
 			</li>
 		</ul>
 	</nav>
@@ -129,18 +126,13 @@
 			</div>
 
 			<div class="about__desc">
-				<p class="about__description" data-i18n="about__description"><span class="about__desc-m2 m2"
-						data-i18n="about__desc-m2">М²</span>-компанія,
-					яка динамічно розвивається та
-					забезпечує надання високої якості послуг з проектування, дизайну та ремонту як житлових, так і комерційних
-					приміщень. Ми працюємо як з приватними замовниками, так і з бізнесом, надаючи послуги по [місто/регіон або
-					Польщі загалом].
+				<p class="about__description" data-i18n="about__description-1"><span
+						class="about__desc-m2 m2">М²</span> — компанія, що динамічно розвивається та надає послуги високої якості у сферах проєктування, дизайну та ремонту житлових і комерційних приміщень. Ми працюємо як з приватними клієнтами, так і з бізнесом, реалізуючи проєкти по всій Польщі.
 				</p>
 
 
-				<p class="about__description" data-i18n="about__description">
-					Наша компанія — це команда професіоналів, яка об’єднала досвід, креативність та сучасний підхід, щоб
-					створювати якісні, надійні та естетичні рішення у сфері будівництва, ремонту, дизайну й проєктування.
+				<p class="about__description" data-i18n="about__description-2">
+					Наша команда — це об’єднання досвідчених фахівців, креативних дизайнерів і сучасних інженерів, які створюють надійні, естетичні та функціональні рішення у сфері будівництва та інтер’єру.
 				</p>
 			</div>
 
@@ -149,31 +141,26 @@
 
 
 	<div class="about__title-block">
+		<i class="about__title-quote fa-solid fa-quote-left"></i>
+		<img src="./img/logo.svg" alt="Будівля компанії М²" class="about__image-text">
 		<h2 class="about__title" data-i18n="about__title">
-			<i class="about__title-quote fa-solid fa-quote-left"></i>
-			<img src="./img/logo.svg" alt="метер квадрадний" class="about__image-text">
 			— там, де ідея стає реальністю
-			<i class="about__title-quote fa-solid fa-quote-right"></i>
 		</h2>
+		<i class="about__title-quote fa-solid fa-quote-right"></i>
 	</div>
 
 	<div class="about__container container">
 		<div class="about__wrapper">
 
 			<div class="about__desc">
-				<p class="about__description" data-i18n="about__description-1">Ми працюємо з проєктами будь-якої складності —
-					від косметичного ремонту до
-					повномасштабного будівництва та створення унікального інтер’єру. Наш головний пріоритет — задоволення потреб
-					клієнта та перевершення його очікувань.</p>
+				<p class="about__description" data-i18n="about__description-3">Ми беремося за проєкти будь-якої складності — від косметичного ремонту до повномасштабного будівництва та створення ексклюзивного інтер’єру під ключ. Наш головний пріоритет — задоволення потреб клієнтів і перевершення їхніх очікувань.</p>
 
-				<p class="about__description" data-i18n="about__description-2">
-					З моменту заснування компанії ми встигли реалізувати десятки успішних проєктів, здобувши репутацію надійного
-					партнера. Ми ретельно підходимо до кожного етапу: від планування до фінального оздоблення, забезпечуючи
-					якість, дотримання термінів та прозорість на всіх рівнях співпраці.
+				<p class="about__description" data-i18n="about__description-4">
+					З моменту заснування компанії ми реалізували десятки успішних проєктів, здобувши репутацію надійного партнера. Ми приділяємо увагу кожному етапу: від концепції до фінішного оздоблення, гарантуючи якість, чіткі терміни та прозору співпрацю.
 				</p>
 
-				<p class="about__description" data-i18n="about__description-3">
-					Обираючи нас — ви обираєте професіоналізм, відповідальність і результат, яким можна пишатися.
+				<p class="about__description" data-i18n="about__description-5">
+					Обираючи М² — ви обираєте професіоналізм, відповідальність і результат, яким можна пишатися.
 				</p>
 			</div>
 		</div>
@@ -183,13 +170,13 @@
 	<section class="services section">
 	<div class="services__container container">
 		<div class="services__blocs">
-			<h2 class="services__title" data-i18n="portfolio">Наші послуги</h2>
-			<p class="services__desc" data-i18n="portfolio">Компанія <span class="m2">м²</span> надає послуги з ремонту,
+			<h2 class="services__title" data-i18n="services-title">Наші послуги</h2>
+			<p class="services__desc" data-i18n="services__desc">Компанія <span class="m2">м²</span> надає послуги з ремонту,
 				дизайну, будівництва та проектування будівель на території Польщі.</p>
 			<div class="services__blocks-list">
 				<a href="./services.html" class="services__block-item">
 					<div class="services__img">
-						<img src="./img/houses-3.jpg" alt="" class="services__image">
+						<img src="./img/houses/houses-3.jpg" alt="" class="services__image">
 					</div>
 					<p class="services__text" data-i18n="services__text-1">Ремонт під ключ</p>
 					<span class="services__line"></span>
@@ -197,7 +184,7 @@
 
 				<a href="./services.html" class="services__block-item">
 					<div class="services__img">
-						<img src="./img/img-5.jpg" alt="" class="services__image">
+						<img src="./img/img/img-5.jpg" alt="" class="services__image">
 					</div>
 
 					<p class="services__text" data-i18n="services__text-2">Індивідуальний дизайн</p>
@@ -206,7 +193,7 @@
 
 				<a href="./services.html" class="services__block-item">
 					<div class="services__img">
-						<img src="./img/img-4.png" alt="" class="services__image">
+						<img src="./img/img/img-4.png" alt="" class="services__image">
 					</div>
 					<p class="services__text" data-i18n="services__text-3">Проектирование зданий</p>
 					<span class="services__line"></span>
@@ -214,7 +201,7 @@
 
 				<a href="./services.html" class="services__block-item">
 					<div class="services__img">
-						<img src="./img/img-1.jpg" alt="" class="services__image">
+						<img src="./img/img/img-1.jpg" alt="" class="services__image">
 					</div>
 					<p class="services__text" data-i18n="services__text-4">Будівництво</p>
 					<span class="services__line"></span>
@@ -231,7 +218,8 @@
 			<div class="about__block">
 				<div class="about__block-row">
 					<h4 class="about__block-col" data-i18n="about__block-col-1">Будівництво <span
-							class="about__block-red">:</span></h4>
+							class="about__block-red">:</span>
+					</h4>
 					<ul class="about__block-ul">
 						<li class="about__block-li" data-i18n="about__block-li-1">Зведення приватних будинків і котеджів</li>
 						<li class="about__block-li" data-i18n="about__block-li-2">Комерційне та промислове будівництво</li>
@@ -242,7 +230,8 @@
 
 				<div class="about__block-row">
 					<h4 class="about__block-col" data-i18n="about__block-col-2">Ремонтні роботи <span
-							class="about__block-red">:</span></h4>
+							class="about__block-red">:</span>
+					</h4>
 					<ul class="about__block-ul">
 						<li class="about__block-li" data-i18n="about__block-li-5">Комплексний ремонт квартир, будинків, офісів</li>
 						<li class="about__block-li" data-i18n="about__block-li-6">Косметичний та капітальний ремонт</li>
@@ -254,7 +243,8 @@
 
 				<div class="about__block-row">
 					<h4 class="about__block-col" data-i18n="about__block-col-3">Дизайн інтер’єру <span
-							class="about__block-red">:</span></h4>
+							class="about__block-red">:</span>
+					</h4>
 					<ul class="about__block-ul">
 						<li class="about__block-li" data-i18n="about__block-li-9">Індивідуальні дизайн-проєкти</li>
 						<li class="about__block-li" data-i18n="about__block-li-10">3D-візуалізація приміщень</li>
@@ -277,7 +267,8 @@
 
 				<div class="about__block-row">
 					<h4 class="about__block-col" data-i18n="about__block-col-5">Додаткові послуги <span
-							class="about__block-red">:</span></h4>
+							class="about__block-red">:</span>
+					</h4>
 					<ul class="about__block-ul">
 						<li class="about__block-li" data-i18n="about__block-li-17">Демонтажні роботи</li>
 						<li class="about__block-li" data-i18n="about__block-li-18">Ландшафтний дизайн</li>
@@ -293,48 +284,47 @@
 			<div class="swiper-wrapper work-p__swiper-wrapper">
 
 				<div class="swiper-slide work-p__swiper-slide">
-					<img src="./img/img-1.jpg" alt="" class="work-p__slider-img">
+					<img src="./img/img/img-1.jpg" alt="" class="work-p__slider-img">
 				</div>
 				<div class="swiper-slide work-p__swiper-slide">
-					<img src="./img/img-2.png" alt="" class="work-p__slider-img">
+					<img src="./img/img/img-2.png" alt="" class="work-p__slider-img">
 				</div>
 				<div class="swiper-slide work-p__swiper-slide">
-					<img src="./img/img-3.png" alt="" class="work-p__slider-img">
+					<img src="./img/img/img-3.png" alt="" class="work-p__slider-img">
 				</div>
 				<div class="swiper-slide work-p__swiper-slide">
-					<img src="./img/img-4.png" alt="" class="work-p__slider-img">
+					<img src="./img/img/img-4.png" alt="" class="work-p__slider-img">
 				</div>
 				<div class="swiper-slide work-p__swiper-slide">
-					<img src="./img/img-5.jpg" alt="" class="work-p__slider-img">
+					<img src="./img/img/img-5.jpg" alt="" class="work-p__slider-img">
 				</div>
 				<div class="swiper-slide work-p__swiper-slide">
-					<img src="./img/img-6.jpg" alt="" class="work-p__slider-img">
+					<img src="./img/img/img-6.jpg" alt="" class="work-p__slider-img">
 				</div>
 				<div class="swiper-slide work-p__swiper-slide">
-					<img src="./img/img-7.jpg" alt="" class="work-p__slider-img">
+					<img src="./img/img/img-7.jpg" alt="" class="work-p__slider-img">
 				</div>
 				<div class="swiper-slide work-p__swiper-slide">
-					<img src="./img/design-2.jpg" alt="" class="work-p__slider-img">
+					<img src="./img/design/design-2.jpg" alt="" class="work-p__slider-img">
 				</div>
 				<div class="swiper-slide work-p__swiper-slide">
-					<img src="./img/houses-3.jpg" alt="" class="work-p__slider-img">
+					<img src="./img/houses/houses-3.jpg" alt="" class="work-p__slider-img">
 				</div>
 				<div class="swiper-slide work-p__swiper-slide">
-					<img src="./img/planning-2.jpg" alt="" class="work-p__slider-img">
+					<img src="./img/planning/planning-2.jpg" alt="" class="work-p__slider-img">
 				</div>
 				<div class="swiper-slide work-p__swiper-slide">
-					<img src="./img/repair-2.jpg" alt="" class="work-p__slider-img">
+					<img src="./img/repair/repair-2.jpg" alt="" class="work-p__slider-img">
 				</div>
 				<div class="swiper-slide work-p__swiper-slide">
-					<img src="./img/all-4.png" alt="" class="work-p__slider-img">
+					<img src="./img/all/all-4.png" alt="" class="work-p__slider-img">
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
 
-			<h2 class="about__subtitle" data-i18n="about__subtitle">Переваги роботи з <span class="about__desc-m2 m2"
-					data-i18n="about__desc-m2">м²</span>: </h2>
+			<h2 class="about__subtitle">Переваги роботи з <span class="about__desc-m2 m2">м²</span>: </h2>
 
 			<div class="about__box">
 
@@ -356,7 +346,7 @@
 
 				<div class="about__box-col">
 					<h4 class="about__box-title" data-i18n="about__box-title-3">Робота “під ключ”</h4>
-					<p class="about__box-text" data-i18n="about__box-text-1">Від ідеї до повної реалізації — ми беремо на себе всі
+					<p class="about__box-text" data-i18n="about__box-text-3">Від ідеї до повної реалізації — ми беремо на себе всі
 						етапи:
 						проєктування,
 						виконання робіт, авторський нагляд і здачу об’єкта.</p>
@@ -364,7 +354,7 @@
 
 				<div class="about__box-col">
 					<h4 class="about__box-title" data-i18n="about__box-title-4">Якість і гарантії</h4>
-					<p class="about__box-text" data-i18n="about__box-text-3">Ми використовуємо лише перевірені матеріали та
+					<p class="about__box-text" data-i18n="about__box-text-4">Ми використовуємо лише перевірені матеріали та
 						дотримуємося всіх
 						технологічних
 						норм. На всі види робіт надаємо гарантію.</p>
@@ -372,7 +362,7 @@
 
 				<div class="about__box-col">
 					<h4 class="about__box-title" data-i18n="about__box-title-5">Дотримання термінів</h4>
-					<p class="about__box-text" data-i18n="about__box-text-4">Цінуємо ваш час. Завжди працюємо за узгодженим
+					<p class="about__box-text" data-i18n="about__box-text-5">Цінуємо ваш час. Завжди працюємо за узгодженим
 						графіком та
 						дотримуємось
 						дедлайнів.</p>
@@ -380,7 +370,7 @@
 
 				<div class="about__box-col">
 					<h4 class="about__box-title" data-i18n="about__box-title-6">Прозоре ціноутворення</h4>
-					<p class="about__box-text" data-i18n="about__box-text-5">Жодних прихованих витрат. Ви заздалегідь знаєте, за
+					<p class="about__box-text" data-i18n="about__box-text-6">Жодних прихованих витрат. Ви заздалегідь знаєте, за
 						що платите, та отримуєте чесну вартість без сюрпризів.</p>
 				</div>
 			</div>
@@ -394,48 +384,53 @@
 			<div class="footer__column">
 				<a href="#" class="footer__title" data-i18n="footer__title-1">Компанія</a>
 				<ul class="footer__list">
-					<li class="footer__item"><a href="./about.html" class="footer__item-link" data-i18n="footer__item-link-1">Про
-							нас</a></li>
-					<li class="footer__item"><a href="./about.html" class="footer__item-link"
-							data-i18n="footer__item-link-2">Відео</a></li>
-					<li class="footer__item"><a href="./contacts.html#contact__message" class="footer__item-link"
-							data-i18n="footer__item-link-3">Карта
-							об’єктів</a></li>
-					<li class="footer__item"><a href="./about.html" class="footer__item-link"
-							data-i18n="footer__item-link-4">Питання та відповіді</a></li>
+					<li class="footer__item">
+						<a href="./about.html" class="footer__item-link" data-i18n="footer__item-link-1">Про нас</a>
+					</li>
+					<li class="footer__item">
+						<a href="./contacts.html#contact__message" class="footer__item-link" data-i18n="footer__item-link-2">Карта
+							об’єктів</a>
+					</li>
 				</ul>
 			</div>
 			<div class="footer__column">
 				<a href="#" class="footer__title" data-i18n="footer__title-2">Послуги</a>
 				<ul class="footer__list">
-					<li class="footer__item"><a href="./portfolio.html" class="footer__item-link"
-							data-i18n="footer__item-link-5">Будівництво</a></li>
-					<li class="footer__item"><a href="./portfolio.html" class="footer__item-link"
-							data-i18n="footer__item-link-6">Ремонтні роботи</a></li>
-					<li class="footer__item"><a href="./portfolio.html" class="footer__item-link"
-							data-i18n="footer__item-link-7">Дизайн</a></li>
-					<li class="footer__item"><a href="./portfolio.html" class="footer__item-link"
-							data-i18n="footer__item-link-8">Проектування</a></li>
+					<li class="footer__item">
+						<a href="./portfolio.html" class="footer__item-link" data-i18n="footer__item-link-5">Будівництво</a>
+					</li>
+					<li class="footer__item">
+						<a href="./portfolio.html" class="footer__item-link" data-i18n="footer__item-link-6">Ремонтні роботи</a>
+					</li>
+					<li class="footer__item">
+						<a href="./portfolio.html" class="footer__item-link" data-i18n="footer__item-link-7">Дизайн</a>
+					</li>
+					<li class="footer__item">
+						<a href="./portfolio.html" class="footer__item-link" data-i18n="footer__item-link-8">Проектування</a>
+					</li>
 				</ul>
 			</div>
 			<div class="footer__column">
 				<a href="#" class="footer__title" data-i18n="footer__title-3">Інформація</a>
 				<ul class="footer__list">
-					<li class="footer__item"><a href="./prices.html" class="footer__item-link"
-							data-i18n="footer__item-link-9">Ціни</a></li>
-					<li class="footer__item"><a href="./portfolio.html#furniture__section" class="footer__item-link"
-							data-i18n="footer__item-link-10">Меблі на
-							замовлення</a></li>
-					<li class="footer__item"><a href="./portfolio.html#work-p" class="footer__item-link"
-							data-i18n="footer__item-link-11">Оформіть
-							заявку</a></li>
+					<li class="footer__item">
+						<a href="./prices.html" class="footer__item-link" data-i18n="footer__item-link-9">Ціни</a>
+					</li>
+					<li class="footer__item">
+						<a href="./portfolio.html#furniture__section" class="footer__item-link"
+							data-i18n="footer__item-link-10">Меблі на замовлення</a>
+					</li>
+					<li class="footer__item">
+						<a href="./portfolio.html#work-p" class="footer__item-link" data-i18n="footer__item-link-11">Оформіть
+							заявку</a>
+					</li>
 				</ul>
 			</div>
 			<div class="footer__column">
 				<a href="#" class="footer__title" data-i18n="footer__title-4">Контакти</a>
 				<ul class="footer__list">
-					<li class="footer__item"><a href="https://wa.me/48793514201" class="footer__item-link"
-							data-i18n="footer__item-link-12"><i class="footer__icon fa-solid fa-phone"></i>+48 793 514 201</a></li>
+					<li class="footer__item"><a href="https://wa.me/48793514201" class="footer__item-link"><i
+								class="footer__icon fa-solid fa-phone"></i>+48 793 514 201</a></li>
 					<li class="footer__item">
 						<div class="footer__work">
 							<div class="footer__work-time" data-i18n="footer__work-time-1">Пн. – Пт.: з 9:00 до 20:00</div>
@@ -443,15 +438,16 @@
 						</div>
 					</li>
 					<li class="footer__item">
-						<a class="footer__item-link" data-i18n="footer__item-link-13" href="./contacts.html#contact__message"><i
+						<a class="footer__item-link" href="./contacts.html#contact__message" data-i18n="footer__item-link-12"><i
 								class="footer__icon fa-solid fa-location-dot"></i>м.
 							Познань</a>
 					</li>
-					<li class="footer__item"><a class="footer__item-link" data-i18n="footer__item-link-14"
-							href="./contacts.html"><i class="footer__icon fa-solid fa-envelope"></i>vova4vova@gmail.com</a>
+					<li class="footer__item"><a class="footer__item-link" href="./contacts.html"
+							data-i18n="footer__item-link-2"><i class="footer__icon fa-solid fa-envelope"></i>vova4vova@gmail.com</a>
 					</li>
-					<li class="footer__item"><a class="footer__item-link" data-i18n="footer__item-link-15"
-							href="mailto:maximikremont@gmail.com"><i class="footer__icon fa-solid fa-envelope"></i>Меблі на заказ</a>
+					<li class="footer__item">
+						<a class="footer__item-link" href="mailto:maximikremont@gmail.com" data-i18n="footer__item-link-3"><i
+								class="footer__icon fa-solid fa-envelope"></i>Меблі на заказ</a>
 					</li>
 				</ul>
 			</div>
@@ -497,6 +493,9 @@
 
 
 
+	<!-- JSON-файл багатомовності -->
+	<script src="./js/lang.js"></script>
+	<script src="./js/lang-data.js"></script>
 
 	<!-- swiper scripts -->
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

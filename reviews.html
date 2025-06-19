@@ -57,16 +57,16 @@
 
 
 			<div class="header__location location" aria-label="Місцезнаходження">
-				<div class="location__city" data-i18n="location__city">
+				<div class="location__city">
 					<i class="location__icon fa-solid fa-location-dot" aria-hidden="true"></i>
 					<a href="./contacts.html#contact__message" class="location__map-link" aria-label="Переглянути карту об'єктів"
-						data-i18n="location__map-link">
-						Познань
+						data-i18n="location__map-link-1">
+						Познань </a>
 				</div>
 				<div class="location__city">
 					<i class="location__icon fa-solid fa-location-dot" aria-hidden="true"></i>
 					<a href="./contacts.html#contact__message" class="location__map-link" aria-label="Переглянути карту об'єктів"
-						data-i18n="location__map-link">
+						data-i18n="location__map-link-2">
 						Карта об'єктів
 					</a>
 				</div>
@@ -79,10 +79,10 @@
 
 			<div class="header__language language" aria-label="Вибір мови сайту">
 				<select name="language" id="language-select" class="language__select">
-					<option class="language__option" value="en">Англійська</option>
-					<option class="language__option" value="pl">Польська</option>
-					<option class="language__option" value="uk" selected>Українська</option>
-					<option class="language__option" value="ru">Російська</option>
+					<option class="language__option" value="en">EN</option>
+					<option class="language__option" value="pl">PL</option>
+					<option class="language__option" value="uk">UA</option>
+					<option class="language__option" value="ru">RU</option>
 				</select>
 			</div>
 
@@ -96,22 +96,19 @@
 	<nav class="header__navbar navbar" aria-label="Головне меню навігації">
 		<ul class="navbar__menu menu-row">
 			<li class="menu-row__item">
-				<a class="menu-row__link" href="./about.html">Про компанію</a>
+				<a class="menu-row__link" href="./about.html" data-i18n="menu-row__link-1">Про компанію</a>
 			</li>
 			<li class="menu-row__item">
-				<a class="menu-row__link" href="./services.html">Наші послуги</a>
+				<a class="menu-row__link" href="./services.html" data-i18n="menu-row__link-2">Наші послуги</a>
 			</li>
 			<li class="menu-row__item">
-				<a class="menu-row__link" href="./portfolio.html">Портфоліо проєктів</a>
-			</li>
-			<!-- <li class="menu-row__item">
-					<a class="menu-row__link" href="./reviews.html">Відгуки клієнтів</a>
-				</li> -->
-			<li class="menu-row__item">
-				<a class="menu-row__link" href="./prices.html">Ціни на послуги</a>
+				<a class="menu-row__link" href="./portfolio.html" data-i18n="menu-row__link-3">Портфоліо проєктів</a>
 			</li>
 			<li class="menu-row__item">
-				<a class="menu-row__link" href="./contacts.html">Контактна інформація</a>
+				<a class="menu-row__link" href="./prices.html" data-i18n="menu-row__link-4">Ціни на послуги</a>
+			</li>
+			<li class="menu-row__item">
+				<a class="menu-row__link" href="./contacts.html" data-i18n="menu-row__link-5">Контактна інформація</a>
 			</li>
 		</ul>
 	</nav>
@@ -130,48 +127,53 @@
 			<div class="footer__column">
 				<a href="#" class="footer__title" data-i18n="footer__title-1">Компанія</a>
 				<ul class="footer__list">
-					<li class="footer__item"><a href="./about.html" class="footer__item-link" data-i18n="footer__item-link-1">Про
-							нас</a></li>
-					<li class="footer__item"><a href="./about.html" class="footer__item-link"
-							data-i18n="footer__item-link-2">Відео</a></li>
-					<li class="footer__item"><a href="./contacts.html#contact__message" class="footer__item-link"
-							data-i18n="footer__item-link-3">Карта
-							об’єктів</a></li>
-					<li class="footer__item"><a href="./about.html" class="footer__item-link"
-							data-i18n="footer__item-link-4">Питання та відповіді</a></li>
+					<li class="footer__item">
+						<a href="./about.html" class="footer__item-link" data-i18n="footer__item-link-1">Про нас</a>
+					</li>
+					<li class="footer__item">
+						<a href="./contacts.html#contact__message" class="footer__item-link" data-i18n="footer__item-link-2">Карта
+							об’єктів</a>
+					</li>
 				</ul>
 			</div>
 			<div class="footer__column">
 				<a href="#" class="footer__title" data-i18n="footer__title-2">Послуги</a>
 				<ul class="footer__list">
-					<li class="footer__item"><a href="./portfolio.html" class="footer__item-link"
-							data-i18n="footer__item-link-5">Будівництво</a></li>
-					<li class="footer__item"><a href="./portfolio.html" class="footer__item-link"
-							data-i18n="footer__item-link-6">Ремонтні роботи</a></li>
-					<li class="footer__item"><a href="./portfolio.html" class="footer__item-link"
-							data-i18n="footer__item-link-7">Дизайн</a></li>
-					<li class="footer__item"><a href="./portfolio.html" class="footer__item-link"
-							data-i18n="footer__item-link-8">Проектування</a></li>
+					<li class="footer__item">
+						<a href="./portfolio.html" class="footer__item-link" data-i18n="footer__item-link-5">Будівництво</a>
+					</li>
+					<li class="footer__item">
+						<a href="./portfolio.html" class="footer__item-link" data-i18n="footer__item-link-6">Ремонтні роботи</a>
+					</li>
+					<li class="footer__item">
+						<a href="./portfolio.html" class="footer__item-link" data-i18n="footer__item-link-7">Дизайн</a>
+					</li>
+					<li class="footer__item">
+						<a href="./portfolio.html" class="footer__item-link" data-i18n="footer__item-link-8">Проектування</a>
+					</li>
 				</ul>
 			</div>
 			<div class="footer__column">
 				<a href="#" class="footer__title" data-i18n="footer__title-3">Інформація</a>
 				<ul class="footer__list">
-					<li class="footer__item"><a href="./prices.html" class="footer__item-link"
-							data-i18n="footer__item-link-9">Ціни</a></li>
-					<li class="footer__item"><a href="./portfolio.html#furniture__section" class="footer__item-link"
-							data-i18n="footer__item-link-10">Меблі на
-							замовлення</a></li>
-					<li class="footer__item"><a href="./portfolio.html#work-p" class="footer__item-link"
-							data-i18n="footer__item-link-11">Оформіть
-							заявку</a></li>
+					<li class="footer__item">
+						<a href="./prices.html" class="footer__item-link" data-i18n="footer__item-link-9">Ціни</a>
+					</li>
+					<li class="footer__item">
+						<a href="./portfolio.html#furniture__section" class="footer__item-link"
+							data-i18n="footer__item-link-10">Меблі на замовлення</a>
+					</li>
+					<li class="footer__item">
+						<a href="./portfolio.html#work-p" class="footer__item-link" data-i18n="footer__item-link-11">Оформіть
+							заявку</a>
+					</li>
 				</ul>
 			</div>
 			<div class="footer__column">
 				<a href="#" class="footer__title" data-i18n="footer__title-4">Контакти</a>
 				<ul class="footer__list">
-					<li class="footer__item"><a href="https://wa.me/48793514201" class="footer__item-link"
-							data-i18n="footer__item-link-12"><i class="footer__icon fa-solid fa-phone"></i>+48 793 514 201</a></li>
+					<li class="footer__item"><a href="https://wa.me/48793514201" class="footer__item-link"><i
+								class="footer__icon fa-solid fa-phone"></i>+48 793 514 201</a></li>
 					<li class="footer__item">
 						<div class="footer__work">
 							<div class="footer__work-time" data-i18n="footer__work-time-1">Пн. – Пт.: з 9:00 до 20:00</div>
@@ -179,15 +181,16 @@
 						</div>
 					</li>
 					<li class="footer__item">
-						<a class="footer__item-link" data-i18n="footer__item-link-13" href="./contacts.html#contact__message"><i
+						<a class="footer__item-link" href="./contacts.html#contact__message" data-i18n="footer__item-link-12"><i
 								class="footer__icon fa-solid fa-location-dot"></i>м.
 							Познань</a>
 					</li>
-					<li class="footer__item"><a class="footer__item-link" data-i18n="footer__item-link-14"
-							href="./contacts.html"><i class="footer__icon fa-solid fa-envelope"></i>vova4vova@gmail.com</a>
+					<li class="footer__item"><a class="footer__item-link" href="./contacts.html"
+							data-i18n="footer__item-link-2"><i class="footer__icon fa-solid fa-envelope"></i>vova4vova@gmail.com</a>
 					</li>
-					<li class="footer__item"><a class="footer__item-link" data-i18n="footer__item-link-15"
-							href="mailto:maximikremont@gmail.com"><i class="footer__icon fa-solid fa-envelope"></i>Меблі на заказ</a>
+					<li class="footer__item">
+						<a class="footer__item-link" href="mailto:maximikremont@gmail.com" data-i18n="footer__item-link-3"><i
+								class="footer__icon fa-solid fa-envelope"></i>Меблі на заказ</a>
 					</li>
 				</ul>
 			</div>
@@ -233,6 +236,9 @@
 
 
 
+	<!-- JSON-файл багатомовності -->
+	<script src="./js/lang.js"></script>
+	<script src="./js/lang-data.js"></script>
 
 	<!-- swiper scripts -->
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
