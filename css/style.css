@@ -153,7 +153,7 @@ body.locked {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  gap: 5px;
+  gap: 10px;
 }
 
 .header__work {
@@ -249,18 +249,18 @@ body.locked {
 }
 
 .menu-social__icon.facebook:hover {
-  -webkit-box-shadow: 1px 1px 20px #0b84ee;
-          box-shadow: 1px 1px 20px #0b84ee;
+  -webkit-box-shadow: 1px 1px 20px #1877f2;
+          box-shadow: 1px 1px 20px #1877f2;
 }
 
 .menu-social__icon.instagram:hover {
-  -webkit-box-shadow: 1px 1px 20px #f0516d;
-          box-shadow: 1px 1px 20px #f0516d;
+  -webkit-box-shadow: 1px 1px 20px linear-gradient(45deg, #feda75, #d62976, #962fbf);
+          box-shadow: 1px 1px 20px linear-gradient(45deg, #feda75, #d62976, #962fbf);
 }
 
 .menu-social__icon.tiktok:hover {
-  -webkit-box-shadow: 1px 1px 20px #fff;
-          box-shadow: 1px 1px 20px #fff;
+  -webkit-box-shadow: 1px 1px 20px radial-gradient(circle, #25f4ee, #ff0050);
+          box-shadow: 1px 1px 20px radial-gradient(circle, #25f4ee, #ff0050);
 }
 
 .menu-social__icon.viber:hover {
@@ -269,8 +269,8 @@ body.locked {
 }
 
 .menu-social__icon.whatsapp:hover {
-  -webkit-box-shadow: 1px 1px 20px #48c95f;
-          box-shadow: 1px 1px 20px #48c95f;
+  -webkit-box-shadow: 1px 1px 20px #20a551;
+          box-shadow: 1px 1px 20px #20a551;
 }
 
 .menu-social__icon.youtube:hover {
@@ -379,7 +379,8 @@ body.locked {
 }
 
 .advantages {
-  background: url(../img/frame/frame-1.jpg) center center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/frame/frame-1.jpg) center center/cover no-repeat;
+  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/frame/frame-1.jpg) center center/cover no-repeat;
   background-attachment: fixed;
 }
 
@@ -788,7 +789,7 @@ body.locked {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  gap: 20px 40px;
+  gap: 20px;
 }
 
 .contact__block-item {
@@ -806,10 +807,23 @@ body.locked {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 20px 0;
+  padding: 20px;
   gap: 20px;
   min-width: 270px;
   min-height: 135px;
+}
+
+.contact__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
 }
 
 .contact__ico {
@@ -850,6 +864,17 @@ body.locked {
   font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
+.contact .p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+}
+
 .contact__text-color {
   color: #e63f24;
   font-weight: 600;
@@ -857,6 +882,13 @@ body.locked {
 
 .contact__text-l {
   font-size: 14px;
+}
+
+.contact__soc {
+  padding: 20px 0;
+  width: 100%;
+  background: url(../img/body.jpg) center center/cover no-repeat;
+  background-attachment: fixed;
 }
 
 .contact__message {
@@ -962,6 +994,7 @@ body.locked {
 }
 
 .contact__map {
+  opacity: 0.8;
   width: 50%;
   max-height: 500px;
   height: 50vh;
@@ -1105,7 +1138,8 @@ body.locked {
 /* ==== services SECTION ==== */
 
 .services {
-  background: url(../img/frame/frame-3.jpg) center center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/frame/frame-3.jpg) center center/cover no-repeat;
+  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/frame/frame-3.jpg) center center/cover no-repeat;
   background-attachment: fixed;
 }
 
@@ -1545,7 +1579,6 @@ body.locked {
 .menu-social__link {
   width: 32px;
   height: 32px;
-  border-radius: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1555,44 +1588,58 @@ body.locked {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: -webkit-box-shadow 0.3s;
-  transition: -webkit-box-shadow 0.3s;
-  transition: box-shadow 0.3s;
-  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
-.menu-social__link.facebook:hover {
-  -webkit-box-shadow: 1xp 1px 20px #0b84ee;
-          box-shadow: 1xp 1px 20px #0b84ee;
+.menu-social__link .menu-social__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-size: 24px;
+  line-height: 1;
 }
 
-.menu-social__link.instagram:hover {
-  -webkit-box-shadow: 1xp 1px 20px #f0516d;
-          box-shadow: 1xp 1px 20px #f0516d;
+.menu-social__link:hover .facebook {
+  -webkit-box-shadow: 1px 1px 20px #1877f2;
+          box-shadow: 1px 1px 20px #1877f2;
+  background: #1877f2;
 }
 
-.menu-social__link.tiktok:hover {
-  -webkit-box-shadow: 1xp 1px 20px #fff;
-          box-shadow: 1xp 1px 20px #fff;
+.menu-social__link:hover .instagram {
+  background: linear-gradient(45deg, #feda75, #d62976, #962fbf);
+  -webkit-box-shadow: 1px 1px 20px linear-gradient(45deg, #feda75, #d62976, #962fbf);
+          box-shadow: 1px 1px 20px linear-gradient(45deg, #feda75, #d62976, #962fbf);
 }
 
-.menu-social__link.viber:hover {
-  -webkit-box-shadow: 1xp 1px 20px #9360b6;
-          box-shadow: 1xp 1px 20px #9360b6;
+.menu-social__link:hover .tiktok {
+  -webkit-box-shadow: 0 0 10px #00f2ea, 0 0 20px #ff0050, 0 0 30px #00f2ea, 0 0 40px #ff0050;
+          box-shadow: 0 0 10px #00f2ea, 0 0 20px #ff0050, 0 0 30px #00f2ea, 0 0 40px #ff0050;
+  background: radial-gradient(circle, #25f4ee, #ff0050);
 }
 
-.menu-social__link.whatsapp:hover {
-  -webkit-box-shadow: 1xp 1px 20px #48c95f;
-          box-shadow: 1xp 1px 20px #48c95f;
+.menu-social__link:hover .whatsapp {
+  -webkit-box-shadow: 1px 1px 20px #20a551;
+          box-shadow: 1px 1px 20px #20a551;
+  background: #20a551;
 }
 
-.menu-social__link.youtube:hover {
-  -webkit-box-shadow: 1xp 1px 20px #f40000;
-          box-shadow: 1xp 1px 20px #f40000;
+.menu-social__link:hover .gmail {
+  -webkit-box-shadow: 1px 1px 20px radial-gradient(circle, #d93025, #fb9404);
+          box-shadow: 1px 1px 20px radial-gradient(circle, #d93025, #fb9404);
+  background: radial-gradient(circle, #d93025, #fb9404);
 }
 
 .furniture {
-  background: url(../img/frame/frame-1.jpg) center center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/frame/frame-1.jpg) center center/cover no-repeat;
+  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/frame/frame-1.jpg) center center/cover no-repeat;
   background-attachment: fixed;
 }
 
@@ -2006,6 +2053,9 @@ body.locked {
 .footer__work-time {
   color: #ccc;
   font-size: 14px;
+}
+
+.footer .ml30 {
   margin-left: 30px;
 }
 
@@ -2112,7 +2162,7 @@ body {
 
   .contact__block-item {
     gap: 20px;
-    min-width: 230px;
+    min-width: 350px;
   }
 
   .contact__subtitle {
@@ -2249,6 +2299,10 @@ body {
     max-width: 330px;
     min-height: 185px;
     padding: 10px;
+  }
+
+  .contact__block-item {
+    min-width: 300px;
   }
 
   .portfolio__menu {
@@ -2403,18 +2457,11 @@ body {
     font-size: 12px;
   }
 
-  .contact__blocks-list {
-    gap: 20px;
-  }
-
   .contact__block-item {
     padding: 0 10px;
     gap: 10px;
-    min-width: 200px;
+    min-width: 250px;
     min-height: 100px;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
   }
 
   .contact__ico {
@@ -2653,7 +2700,6 @@ body {
   }
 
   .contact__block-item {
-    min-width: 100px;
     min-height: 85px;
   }
 
@@ -2885,8 +2931,11 @@ body {
   }
 
   .footer__work-time {
-    margin-left: 10px;
     font-size: 10px;
+  }
+
+  .footer .ml30 {
+    margin-left: 10px;
   }
 }
 

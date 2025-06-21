@@ -216,12 +216,6 @@ window.langData = {
     pl: "Wybierając M², wybierasz profesjonalizm, odpowiedzialność i rezultat, z którego możesz być dumny.",
     ru: "Выбирая М², вы выбираете профессионализм, ответственность и результат, которым можно гордиться.",
   },
-  "about__block-col-1": {
-    uk: "Будівництво",
-    en: "Construction",
-    pl: "Budownictwo",
-    ru: "Строительство",
-  },
   "about__block-col-2": {
     uk: "Ремонтні роботи",
     en: "Renovation works",
@@ -537,10 +531,10 @@ window.langData = {
     ru: "Адрес",
   },
   "contact__text-1": {
-    uk: "м.Познань",
+    uk: "Познань",
     en: "Poznań",
     pl: "Poznań",
-    ru: "г.Познань",
+    ru: "Познань",
   },
   "contact__subtitle-2": {
     uk: "Телефон",
@@ -603,6 +597,12 @@ window.langData = {
     pl: "Mapa obiektów",
     ru: "Карта объектов",
   },
+  "footer__item-link-3": {
+    uk: "Меблі на заказ",
+    en: "Custom furniture",
+    pl: "Meble na wymiar",
+    ru: "Мебель на заказ",
+  },
   "footer__title-2": {
     uk: "Послуги",
     en: "Services",
@@ -658,10 +658,10 @@ window.langData = {
     ru: "Оформить заявку",
   },
   "footer__item-link-12": {
-    uk: "м. Познань",
+    uk: "Познань",
     en: "Poznan",
     pl: "Poznań",
-    ru: "м. Познань",
+    ru: "Познань",
   },
   "footer__item-link-13": {
     uk: "Меблі на заказ",
@@ -726,10 +726,10 @@ window.langData = {
   },
 
   "location__map-link-1": {
-    uk: "м. Познань",
+    uk: "Познань",
     en: "Poznan",
     pl: "Poznań",
-    ru: "м. Познань",
+    ru: "Познань",
   },
   "location__map-link-2": {
     uk: "Карта об'єктів",
@@ -1567,13 +1567,6 @@ window.langData = {
     ru: "Монтаж электрощита",
     pl: "Montaż rozdzielnicy elektrycznej",
   },
-
-  services__title: {
-    uk: "Наші послуги",
-    en: "Our Services",
-    ru: "Наши услуги",
-    pl: "Nasze usługi",
-  },
   services__desc: {
     uk: 'Компанія <span class="m2">М²</span> надає послуги з ремонту, дизайну, будівництва та проектування будівель на території Польщі.',
     en: 'Company <span class="m2">М²</span> provides renovation, design, construction, and building planning services throughout Poland.',
@@ -1597,12 +1590,6 @@ window.langData = {
     en: "Building Design",
     ru: "Проектирование зданий",
     pl: "Projektowanie budynków",
-  },
-  "services__text-4": {
-    uk: "Будівництво",
-    en: "Construction",
-    ru: "Строительство",
-    pl: "Budowa",
   },
 
   "swiper__title-1": {
