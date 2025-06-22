@@ -74,6 +74,10 @@ h6 {
   font-size: inherit;
 }
 
+p {
+  font-display: swap;
+}
+
 body {
   background: #fff;
 }
@@ -118,7 +122,7 @@ body.locked {
 }
 
 .header {
-  background: url(../img/body.jpg) center center/cover no-repeat;
+  background: url(../img/body.webp) center center/cover no-repeat;
   background-attachment: fixed;
 }
 
@@ -259,8 +263,8 @@ body.locked {
 }
 
 .menu-social__icon.tiktok:hover {
-  -webkit-box-shadow: 1px 1px 20px radial-gradient(circle, #25f4ee, #ff0050);
-          box-shadow: 1px 1px 20px radial-gradient(circle, #25f4ee, #ff0050);
+  -webkit-box-shadow: 1px 1px 20px #ff0050;
+          box-shadow: 1px 1px 20px #ff0050;
 }
 
 .menu-social__icon.viber:hover {
@@ -379,8 +383,8 @@ body.locked {
 }
 
 .advantages {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/frame/frame-1.jpg) center center/cover no-repeat;
-  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/frame/frame-1.jpg) center center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/frame/frame-1.webp) center center/cover no-repeat;
+  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/frame/frame-1.webp) center center/cover no-repeat;
   background-attachment: fixed;
 }
 
@@ -500,6 +504,23 @@ body.locked {
   color: #000;
 }
 
+.about__h1 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  font-family: "Gabriela", serif;
+  position: relative;
+  padding-bottom: 15px;
+  color: #fff;
+  line-height: 1.4;
+  padding-bottom: 30px;
+  border-bottom: 4px solid #e63f24;
+}
+
+.about__h1 {
+  color: #000;
+}
+
 .about__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -562,6 +583,9 @@ body.locked {
   font-size: 20px;
   font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
   line-height: 1.2;
+}
+
+.about__description {
   color: #000;
   max-width: none;
   text-align: left;
@@ -736,7 +760,6 @@ body.locked {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 40px;
 }
 
 .contact__blocs {
@@ -754,6 +777,7 @@ body.locked {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-bottom: 40px;
 }
 
 .contact__title {
@@ -767,6 +791,9 @@ body.locked {
   line-height: 1.4;
   padding-bottom: 30px;
   border-bottom: 4px solid #e63f24;
+}
+
+.contact__title {
   color: #000;
 }
 
@@ -885,16 +912,16 @@ body.locked {
 }
 
 .contact__soc {
-  padding: 20px 0;
+  padding: 40px 0;
   width: 100%;
-  background: url(../img/body.jpg) center center/cover no-repeat;
+  background: url(../img/body.webp) center center/cover no-repeat;
   background-attachment: fixed;
 }
 
 .contact__message {
   width: 100%;
   padding: 40px 0;
-  background: url(../img/body.jpg) center center/cover no-repeat;
+  background: url(../img/body.webp) center center/cover no-repeat;
   background-attachment: fixed;
 }
 
@@ -969,7 +996,7 @@ body.locked {
   font-size: 20px;
   font-weight: 600;
   color: #fff;
-  text-align: left;
+  text-align: center;
 }
 
 .contact__button {
@@ -998,6 +1025,7 @@ body.locked {
   width: 50%;
   max-height: 500px;
   height: 50vh;
+  min-height: 450px;
 }
 
 .contact__map-iframe {
@@ -1005,6 +1033,23 @@ body.locked {
   height: 100%;
   border: 5px solid #e63f24;
   border-radius: 20px;
+}
+
+.portfolio__h1 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  font-family: "Gabriela", serif;
+  position: relative;
+  padding-bottom: 15px;
+  color: #fff;
+  line-height: 1.4;
+  padding-bottom: 30px;
+  border-bottom: 4px solid #e63f24;
+}
+
+.portfolio__h1 {
+  color: #000;
 }
 
 .portfolio__blocks {
@@ -1035,6 +1080,9 @@ body.locked {
   line-height: 1.4;
   padding-bottom: 30px;
   border-bottom: 4px solid #e63f24;
+}
+
+.portfolio__title {
   color: #000;
 }
 
@@ -1065,9 +1113,6 @@ body.locked {
   font-size: 18px;
   font-weight: 600;
   line-height: 1.4;
-  text-align: center;
-  font-size: 20px;
-  cursor: pointer;
 }
 
 .portfolio__item:hover {
@@ -1076,6 +1121,12 @@ body.locked {
   color: #fff;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+.portfolio__item {
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 .portfolio__item.active {
@@ -1138,9 +1189,26 @@ body.locked {
 /* ==== services SECTION ==== */
 
 .services {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/frame/frame-3.jpg) center center/cover no-repeat;
-  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/frame/frame-3.jpg) center center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/frame/frame-3.webp) center center/cover no-repeat;
+  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/frame/frame-3.webp) center center/cover no-repeat;
   background-attachment: fixed;
+}
+
+.services__h1 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  font-family: "Gabriela", serif;
+  position: relative;
+  padding-bottom: 15px;
+  color: #fff;
+  line-height: 1.4;
+  padding-bottom: 30px;
+  border-bottom: 4px solid #e63f24;
+}
+
+.services__h1 {
+  color: #000;
 }
 
 .services__blocs {
@@ -1406,7 +1474,6 @@ body.locked {
 }
 
 .work-p__swiper-slide {
-  width: 100%;
   margin: 0 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1421,7 +1488,6 @@ body.locked {
 
 .work-p__slider-img {
   width: 100%;
-  height: 150px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -1470,33 +1536,33 @@ body.locked {
 }
 
 .main-swiper__slide:nth-child(1) {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/img/img-1.jpg) center center/cover no-repeat;
-  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/img/img-1.jpg) center center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/img/img-1.webp) center center/cover no-repeat;
+  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/img/img-1.webp) center center/cover no-repeat;
 }
 
 .main-swiper__slide:nth-child(2) {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/frame/frame-12.jpeg) center center/cover no-repeat;
-  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/frame/frame-12.jpeg) center center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/frame/frame-12.webp) center center/cover no-repeat;
+  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/frame/frame-12.webp) center center/cover no-repeat;
 }
 
 .main-swiper__slide:nth-child(3) {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/frame/frame-13.jpeg) center center/cover no-repeat;
-  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/frame/frame-13.jpeg) center center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/frame/frame-13.webp) center center/cover no-repeat;
+  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/frame/frame-13.webp) center center/cover no-repeat;
 }
 
 .main-swiper__slide:nth-child(4) {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/img/img-7.jpg) center center/cover no-repeat;
-  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/img/img-7.jpg) center center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/img/img-7.webp) center center/cover no-repeat;
+  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/img/img-7.webp) center center/cover no-repeat;
 }
 
 .main-swiper__slide:nth-child(5) {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/img/img-2.png) center center/cover no-repeat;
-  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/img/img-2.png) center center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/img/img-2.webp) center center/cover no-repeat;
+  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/img/img-2.webp) center center/cover no-repeat;
 }
 
 .main-swiper__slide:nth-child(6) {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/img/img-3.png) center center/cover no-repeat;
-  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/img/img-3.png) center center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/img/img-3.webp) center center/cover no-repeat;
+  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/img/img-3.webp) center center/cover no-repeat;
 }
 
 .main-swiper__title {
@@ -1615,14 +1681,14 @@ body.locked {
 
 .menu-social__link:hover .instagram {
   background: linear-gradient(45deg, #feda75, #d62976, #962fbf);
-  -webkit-box-shadow: 1px 1px 20px linear-gradient(45deg, #feda75, #d62976, #962fbf);
-          box-shadow: 1px 1px 20px linear-gradient(45deg, #feda75, #d62976, #962fbf);
+  -webkit-box-shadow: 1px 1px 20px #d62976;
+          box-shadow: 1px 1px 20px #d62976;
 }
 
 .menu-social__link:hover .tiktok {
   -webkit-box-shadow: 0 0 10px #00f2ea, 0 0 20px #ff0050, 0 0 30px #00f2ea, 0 0 40px #ff0050;
           box-shadow: 0 0 10px #00f2ea, 0 0 20px #ff0050, 0 0 30px #00f2ea, 0 0 40px #ff0050;
-  background: radial-gradient(circle, #25f4ee, #ff0050);
+  background: #ff0050;
 }
 
 .menu-social__link:hover .whatsapp {
@@ -1632,20 +1698,20 @@ body.locked {
 }
 
 .menu-social__link:hover .gmail {
-  -webkit-box-shadow: 1px 1px 20px radial-gradient(circle, #d93025, #fb9404);
-          box-shadow: 1px 1px 20px radial-gradient(circle, #d93025, #fb9404);
-  background: radial-gradient(circle, #d93025, #fb9404);
+  -webkit-box-shadow: 1px 1px 20px rgb(255, 0, 0);
+          box-shadow: 1px 1px 20px rgb(255, 0, 0);
+  background: rgb(255, 0, 0);
 }
 
 .furniture {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/frame/frame-1.jpg) center center/cover no-repeat;
-  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/frame/frame-1.jpg) center center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/frame/frame-1.webp) center center/cover no-repeat;
+  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/frame/frame-1.webp) center center/cover no-repeat;
   background-attachment: fixed;
 }
 
 .furniture__container {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1700,8 +1766,11 @@ body.locked {
   font-size: 20px;
   font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
   line-height: 1.2;
+}
+
+.furniture__text {
   max-width: none;
-  width: 600px;
+  width: 630px;
 }
 
 .furniture__button {
@@ -1715,7 +1784,6 @@ body.locked {
   font-size: 18px;
   font-weight: 600;
   line-height: 1.4;
-  text-align: center;
 }
 
 .furniture__button:hover {
@@ -1724,6 +1792,10 @@ body.locked {
   color: #fff;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+.furniture__button {
+  text-align: center;
 }
 
 .furniture-swiper {
@@ -1744,7 +1816,7 @@ body.locked {
 }
 
 .prices {
-  background: url(../img/body.jpg) center center/cover no-repeat;
+  background: url(../img/body.webp) center center/cover no-repeat;
   background-attachment: fixed;
   border-bottom: 1px solid #555;
 }
@@ -1786,6 +1858,9 @@ body.locked {
   font-size: 20px;
   font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
   line-height: 1.2;
+}
+
+.prices__text {
   padding-bottom: 20px;
   font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
   max-width: 600px;
@@ -1835,6 +1910,9 @@ body.locked {
   font-size: 20px;
   font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
   line-height: 1.2;
+}
+
+.prices__table-title {
   font-size: 20px;
   text-align: left;
   width: 100%;
@@ -1872,6 +1950,9 @@ body.locked {
   font-size: 20px;
   font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
   line-height: 1.2;
+}
+
+.prices__tr {
   text-align: left;
   width: 100%;
   font-size: 18px;
@@ -1901,20 +1982,20 @@ body.locked {
 }
 
 .prices__painting {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/prices/prices-1.png) center center/cover no-repeat;
-  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/prices/prices-1.png) center center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/prices/prices-1.webp) center center/cover no-repeat;
+  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/prices/prices-1.webp) center center/cover no-repeat;
   background-attachment: fixed;
 }
 
 .prices__drywall {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/prices/prices-2.jpg) center center/cover no-repeat;
-  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/prices/prices-2.jpg) center center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/prices/prices-2.webp) center center/cover no-repeat;
+  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/prices/prices-2.webp) center center/cover no-repeat;
   background-attachment: fixed;
 }
 
 .prices__tiler {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/prices/prices-3.jpg) center center/cover no-repeat;
-  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/prices/prices-3.jpg) center center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/prices/prices-3.webp) center center/cover no-repeat;
+  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/prices/prices-3.webp) center center/cover no-repeat;
   background-attachment: fixed;
 }
 
@@ -1925,25 +2006,25 @@ body.locked {
 }
 
 .prices__installation {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/prices/prices-5.jpg) center center/cover no-repeat;
-  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/prices/prices-5.jpg) center center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/prices/prices-5.webp) center center/cover no-repeat;
+  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/prices/prices-5.webp) center center/cover no-repeat;
   background-attachment: fixed;
 }
 
 .prices__plumbing {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/prices/prices-6.jpg) center center/cover no-repeat;
-  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/prices/prices-6.jpg) center center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/prices/prices-6.webp) center center/cover no-repeat;
+  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/prices/prices-6.webp) center center/cover no-repeat;
   background-attachment: fixed;
 }
 
 .prices__electricity {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/prices/prices-7.jpg) center center/cover no-repeat;
-  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/prices/prices-7.jpg) center center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.75)), to(rgba(15, 15, 15, 0.75))), url(../img/prices/prices-7.webp) center center/cover no-repeat;
+  background: linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.75)), url(../img/prices/prices-7.webp) center center/cover no-repeat;
   background-attachment: fixed;
 }
 
 .footer {
-  background: url(../img/body.jpg) center center/cover no-repeat;
+  background: url(../img/body.webp) center center/cover no-repeat;
   background-attachment: fixed;
 }
 
@@ -2250,6 +2331,13 @@ body {
     display: none;
   }
 
+  .menu-row__link {
+    font-size: 14px;
+    text-transform: lowercase;
+    font-weight: 400;
+    letter-spacing: 0px;
+  }
+
   .advantages__blocks {
     gap: 20px;
   }
@@ -2283,7 +2371,7 @@ body {
   }
 
   .about__title {
-    font-size: 32px;
+    font-size: 24px;
   }
 
   .about__image-text {
@@ -2303,6 +2391,19 @@ body {
 
   .contact__block-item {
     min-width: 300px;
+  }
+
+  .contact__message-blocks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  .contact__map {
+    width: 100%;
+    height: 40vh;
   }
 
   .portfolio__menu {
@@ -2430,7 +2531,7 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    gap: 40px;
+    gap: 0px;
   }
 
   .menu-row__item {
@@ -2438,11 +2539,16 @@ body {
     border-right: 0px;
   }
 
-  .menu-row__link {
+  .menu-row__link.active {
     padding: 0;
     color: #fff;
     background-color: none;
     padding: 3px 0 0 20px;
+  }
+
+  .menu-row__link {
+    text-transform: uppercase;
+    font-weight: 600;
   }
 
   .about__block-row {
@@ -2473,14 +2579,6 @@ body {
     margin: 0;
   }
 
-  .contact__message-blocks {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    gap: 20px;
-  }
-
   .contact__right {
     gap: 30px;
   }
@@ -2496,10 +2594,6 @@ body {
   .contact__button {
     padding: 10px;
     font-size: 14px;
-  }
-
-  .contact__map {
-    width: 100%;
   }
 
   .portfolio__blocks {
@@ -2519,11 +2613,6 @@ body {
     font-size: 18px;
     padding: 10px;
     min-width: 150px;
-  }
-
-  .portfolio__block-imgs {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 160px);
   }
 
   .services__blocks-list {
@@ -2560,7 +2649,6 @@ body {
 
   .work-p__swiper-slide {
     width: 200px;
-    height: 170px;
   }
 
   .swiper__container {
@@ -2573,9 +2661,17 @@ body {
     height: 350px;
   }
 
+  .furniture__text {
+    width: 480px;
+  }
+
   .furniture__button {
     padding: 10px;
     font-size: 14px;
+  }
+
+  .furniture-swiper__img {
+    aspect-ratio: 5/3;
   }
 
   .prices__text {
@@ -2663,6 +2759,10 @@ body {
     min-height: 60px;
   }
 
+  .about__h1 {
+    font-size: 18px;
+  }
+
   .about__description {
     font-size: 14px;
   }
@@ -2715,8 +2815,8 @@ body {
     font-size: 14px;
   }
 
-  .contact__map {
-    height: 40vh;
+  .portfolio__h1 {
+    font-size: 18px;
   }
 
   .portfolio__title {
@@ -2752,6 +2852,10 @@ body {
   .img-pos-4 {
     grid-column: 1/3;
     grid-row: 4/5;
+  }
+
+  .services__h1 {
+    font-size: 18px;
   }
 
   .services__title {
@@ -2802,11 +2906,10 @@ body {
 
   .work-p__swiper-slide {
     width: 200px;
-    height: 170px;
   }
 
   .work-p__slider-img {
-    height: 130px;
+    height: 80px;
   }
 
   .swiper__container {
@@ -2842,12 +2945,28 @@ body {
     height: 20px;
   }
 
+  .furniture__container {
+    min-height: 50vh;
+  }
+
   .furniture__title {
     font-size: 18px;
   }
 
   .furniture__text {
     font-size: 14px;
+  }
+
+  .furniture__text {
+    width: 350px;
+  }
+
+  .furniture-swiper {
+    height: 100px;
+  }
+
+  .furniture-swiper__img {
+    aspect-ratio: 4/3;
   }
 
   .prices__title {
@@ -2988,13 +3107,20 @@ body {
   .work-p__swiper-slide {
     margin: 0 10px;
     width: 170px;
-    height: 170px;
   }
 
   .swiper__container {
     max-width: 100%;
     padding: 0;
     margin-bottom: 10px;
+  }
+
+  .furniture__text {
+    width: 300px;
+  }
+
+  .furniture-swiper {
+    height: 80px;
   }
 
   .prices__text {

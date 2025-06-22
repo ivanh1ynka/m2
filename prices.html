@@ -2,22 +2,44 @@
 <html lang="en">
 
 <head>
+	<!-- Кодування -->
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>m2</title>
 
-	<!-- normalize -->
+	<!-- SEO -->
+	<meta name="robots" content="index, follow">
+	<meta name="description"
+		content="Професійні послуги ремонту, дизайну та будівництва у Познані та по всій Польщі. Якість, терміни, гарантія.">
+	<meta name="keywords" content="ремонт, дизайн, будівництво, Познань, Польща, компанія М²">
+	<meta name="author" content="Ivan Glinka">
+
+	<!-- Назва у вкладці -->
+	<title>М² — Ремонтна компанія</title>
+
+	<!-- favicon -->
+	<link rel="icon" href="../img/logo_64x64.ico" type="image/x-icon">
+
+	<!-- Open Graph для Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="М² — Ремонтна компанія">
+	<meta property="og:description" content="Професійні послуги ремонту, дизайну та будівництва по всій Польщі.">
+	<meta property="og:image" content="https://m2-company.netlify.app/img/logo_64x64.ico">
+	<meta property="og:url" content="https://m2-company.netlify.app/">
+	<meta property="og:site_name" content="Компанія М²">
+
+	<!-- Скидання стилів -->
 	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
-	<!-- fontawesome -->
+
+	<!-- Font Awesome -->
 	<script src="https://kit.fontawesome.com/1463ad3125.js" crossorigin="anonymous"></script>
-	<!-- swiper -->
+
+	<!-- Swiper -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-	<!-- style -->
 
-	<link rel="stylesheet" href="./css/style.min.css">
+	<!-- Головні стилі -->
+	<link rel="stylesheet" href="css/style.min.css?v=2">
 </head>
-
 <body>
 	<!-- ===== header ===== -->
 	<header class="header" id="header" aria-label="Шапка сайту">
@@ -25,7 +47,7 @@
 		<div class="header__logo-row">
 			<div class="header__logo-block">
 				<a href="./index.html" class="header__logo-link" aria-label="Перейти на головну сторінку">
-					<img src="./img/logo.svg" alt="Логотип компанії" class="header__logo-img">
+					<img src="./img/logo.svg" loading="lazy" alt="Логотип компанії" class="header__logo-img">
 				</a>
 			</div>
 
@@ -53,8 +75,8 @@
 		</a>
 	</li>
 	<li class="menu-social__item">
-		<a href="mailto:vova4vova@mail.com" class="menu-social__link gmail" aria-label="gmail">
-			<i class="fa-brands fa-google menu-social__icon gmail"></i>
+		<a href="mailto:vova4vova@mail.com" class="menu-social__link" aria-label="gmail">
+			<i class="fa-solid fa-envelope menu-social__icon gmail"></i>
 		</a>
 	</li>
 </ul>
@@ -126,9 +148,9 @@
 	<setion class="prices section">
 	<div class="container prices__container">
 		<div class="prices__desc">
-			<h2 class="prices__title" data-i18n="prices__title">Ціни на будівельні послуги — Ремонт, дизайн, проєктування
+			<h1 class="prices__title" data-i18n="prices__title">Ціни на будівельні послуги — Ремонт, дизайн, проєктування
 				<span class="about__desc-m2 m2">М²</span>
-			</h2>
+			</h1>
 			<p class="prices__text" data-i18n="prices__text">Детальний прайс на ремонтні та будівельні послуги: малярні
 				роботи, плитка, гіпсокартон,
 				сантехніка, електрика та інше. Прозорі ціни та якість, підтверджена дос<span
@@ -1205,8 +1227,8 @@
 		</a>
 	</li>
 	<li class="menu-social__item">
-		<a href="mailto:vova4vova@mail.com" class="menu-social__link gmail" aria-label="gmail">
-			<i class="fa-brands fa-google menu-social__icon gmail"></i>
+		<a href="mailto:vova4vova@mail.com" class="menu-social__link" aria-label="gmail">
+			<i class="fa-solid fa-envelope menu-social__icon gmail"></i>
 		</a>
 	</li>
 </ul>
@@ -1219,14 +1241,11 @@
 
 
 
-	<!-- JSON-файл багатомовності -->
-	<script src="./js/lang.js"></script>
-	<script src="./js/lang-data.js"></script>
 
 	<!-- swiper scripts -->
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 	<!-- scripts -->
-	<script src="./js/scripts.min.js"></script>
+	<script src="js/scripts.min.js?v=2" defer></script>
 
 </body>
 

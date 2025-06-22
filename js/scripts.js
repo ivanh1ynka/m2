@@ -59,34 +59,34 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const portfolioImages = {
     all: [
-      "./img/img/img-3.png",
-      "./img/img/img-7.jpg",
-      "./img/img/img-4.png",
-      "./img/frame/frame-7.jpg",
+      "./img/img/img-3.webp",
+      "./img/img/img-7.webp",
+      "./img/img/img-4.webp",
+      "./img/frame/frame-7.webp",
     ],
     design: [
-      "./img/img/img-7.jpg",
-      "./img/design/design-2.jpg",
-      "./img/img/img-5.jpg",
-      "./img/planning/planning-2.jpg",
+      "./img/img/img-7.webp",
+      "./img/design/design-2.webp",
+      "./img/img/img-5.webp",
+      "./img/planning/planning-2.webp",
     ],
     repair: [
-      "./img/img/img-3.png",
-      "./img/repair/repair-2.jpg",
-      "./img/houses/houses-3.jpg",
-      "./img/frame/frame-5.jpg",
+      "./img/img/img-3.webp",
+      "./img/repair/repair-2.webp",
+      "./img/houses/houses-3.webp",
+      "./img/frame/frame-5.webp",
     ],
     planning: [
-      "./img/img/img-4.png",
-      "./img/proekt-1.jpg",
-      "./img/frame/frame-11.jpg",
-      "./img/frame/frame-10.png",
+      "./img/img/img-4.webp",
+      "./img/proekt-1.webp",
+      "./img/frame/frame-11.webp",
+      "./img/frame/frame-10.webp",
     ],
     houses: [
-      "./img/frame/frame-7.jpg",
-      "./img/frame/frame-6.jpg",
-      "./img/frame/frame-8.jpg",
-      "./img/img/img-5.png",
+      "./img/frame/frame-7.webp",
+      "./img/frame/frame-6.webp",
+      "./img/frame/frame-8.webp",
+      "./img/img/img-5.webp",
     ],
   };
 
@@ -141,6 +141,25 @@ const workSwiper = new Swiper(".work-p__swiper", {
     disableOnInteraction: false,
     pauseOnMouseEnter: false,
   },
+
+  pagination: {
+    el: ".furniture-swiper__pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    1440: {
+      slidesPerView: 5,
+    },
+    1024: {
+      slidesPerView: 4,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    600: {
+      slidesPerView: 2,
+    },
+  },
 });
 
 
@@ -180,6 +199,13 @@ const swiperf = new Swiper(".furniture-swiper", {
 
 
 window.langData = {
+  about__h1: {
+    uk: 'Дізнайтесь більше про «<span class="about__desc-m2 m2">М²</span>»',
+    en: 'Learn more about «<span class="about__desc-m2 m2">М²</span>»',
+    pl: 'Dowiedz się więcej o «<span class="about__desc-m2 m2">М²</span>»',
+    ru: 'Узнайте больше о «<span class="about__desc-m2 m2">М²</span>»',
+
+  },
   "about__description-1": {
     uk: '<span class="about__desc-m2 m2">М²</span> — компанія, що динамічно розвивається та надає послуги високої якості у сферах проєктування, дизайну та ремонту житлових і комерційних приміщень. Ми працюємо як з приватними клієнтами, так і з бізнесом, реалізуючи проєкти по всій Польщі.',
     en: '<span class="about__desc-m2 m2">M²</span> is a dynamically growing company providing high-quality services in design, architecture, and renovation of residential and commercial spaces. We work with both private clients and businesses, implementing projects throughout Poland.',
@@ -779,7 +805,12 @@ window.langData = {
     pl: "Informacje kontaktowe",
     ru: "Контактная информация",
   },
-
+  portfolio__h1: {
+    uk: "Завершені об'єкти – наш досвід у деталях",
+    en: "Completed projects - our experience in detail",
+    ru: "Завершенные проекты – наши знания в деталях",
+    pl: "Zrealizowane projekty - szczegółowo nasze doświadczenia",
+  },
   portfolio__title: {
     uk: "Наші роботи",
     en: "Our Projects",
@@ -1567,6 +1598,12 @@ window.langData = {
     ru: "Монтаж электрощита",
     pl: "Montaż rozdzielnicy elektrycznej",
   },
+  "services__text-1": {
+    uk: "Комплексні рішення у сфері будівництва",
+    en: "Comprehensive solutions in the construction sector",
+    ru: "Комплексные решения в сфере строительства",
+    pl: "Kompleksowe rozwiązania w sektorze budowlanym",
+  },
   services__desc: {
     uk: 'Компанія <span class="m2">М²</span> надає послуги з ремонту, дизайну, будівництва та проектування будівель на території Польщі.',
     en: 'Company <span class="m2">М²</span> provides renovation, design, construction, and building planning services throughout Poland.',
@@ -1723,4 +1760,5 @@ document.addEventListener("DOMContentLoaded", () => {
   if (select) select.value = lang;
   translatePage(lang);
 });
+
 

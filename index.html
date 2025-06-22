@@ -2,21 +2,43 @@
 <html lang="en">
 
 <head>
+	<!-- Кодування -->
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>m2</title>
-	<!-- icon -->
-	<link rel="icon" href="./img/logo_64x64.ico" type="image/x-icon">
-	<!-- normalize -->
-	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
-	<!-- fontawesome -->
-	<script src="https://kit.fontawesome.com/1463ad3125.js" crossorigin="anonymous"></script>
-	<!-- swiper -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-	<!-- style -->
 
-	<link rel="stylesheet" href="./css/style.min.css">
+	<!-- SEO -->
+	<meta name="robots" content="index, follow">
+	<meta name="description"
+		content="Професійні послуги ремонту, дизайну та будівництва у Познані та по всій Польщі. Якість, терміни, гарантія.">
+	<meta name="keywords" content="ремонт, дизайн, будівництво, Познань, Польща, компанія М²">
+	<meta name="author" content="Ivan Glinka">
+
+	<!-- Назва у вкладці -->
+	<title>М² — Ремонтна компанія</title>
+
+	<!-- favicon -->
+	<link rel="icon" href="../img/logo_64x64.ico" type="image/x-icon">
+
+	<!-- Open Graph для Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="М² — Ремонтна компанія">
+	<meta property="og:description" content="Професійні послуги ремонту, дизайну та будівництва по всій Польщі.">
+	<meta property="og:image" content="https://m2-company.netlify.app/img/logo_64x64.ico">
+	<meta property="og:url" content="https://m2-company.netlify.app/">
+	<meta property="og:site_name" content="Компанія М²">
+
+	<!-- Скидання стилів -->
+	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
+
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/1463ad3125.js" crossorigin="anonymous"></script>
+
+	<!-- Swiper -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+	<!-- Головні стилі -->
+	<link rel="stylesheet" href="css/style.min.css?v=2">
 </head>
 
 <body>
@@ -25,7 +47,7 @@
 		<div class="header__logo-row">
 			<div class="header__logo-block">
 				<a href="./index.html" class="header__logo-link" aria-label="Перейти на головну сторінку">
-					<img src="./img/logo.svg" alt="Логотип компанії" class="header__logo-img">
+					<img src="./img/logo.svg" loading="lazy" alt="Логотип компанії" class="header__logo-img">
 				</a>
 			</div>
 
@@ -53,8 +75,8 @@
 		</a>
 	</li>
 	<li class="menu-social__item">
-		<a href="mailto:vova4vova@mail.com" class="menu-social__link gmail" aria-label="gmail">
-			<i class="fa-brands fa-google menu-social__icon gmail"></i>
+		<a href="mailto:vova4vova@mail.com" class="menu-social__link" aria-label="gmail">
+			<i class="fa-solid fa-envelope menu-social__icon gmail"></i>
 		</a>
 	</li>
 </ul>
@@ -127,8 +149,8 @@
 		<div class="swiper-wrapper">
 			<div class="swiper-slide main-swiper__slide">
 				<div class="container">
-					<h2 class="main-swiper__title" data-i18n="swiper__title-1">Ваш простір починається тут – ми створимо його з
-						нуля до ідеалу.</h2>
+					<h1 class="main-swiper__title" data-i18n="swiper__title-1">Ваш простір починається тут – ми створимо його з
+						нуля до ідеалу.</h1>
 					<p class="main-swiper__text" data-i18n="swiper__text-1">Індивідуальний підхід, сучасні технології, контроль
 						якості та дотримання термінів.
 						Працюємо для вашого комфорту.
@@ -192,6 +214,51 @@
 	</div>
 
 </div>
+	<div class="container">
+	<div class="work-p__wrapper">
+		<div class="swiper work-p__swiper" id="work-p__swiper">
+			<div class="swiper-wrapper work-p__swiper-wrapper">
+
+				<div class="swiper-slide work-p__swiper-slide">
+					<img src="./img/img/img-1.webp" loading="lazy" alt="slider-1" class="work-p__slider-img">
+				</div>
+				<div class="swiper-slide work-p__swiper-slide">
+					<img src="./img/img/img-2.webp" loading="lazy" alt="slider-2" class="work-p__slider-img">
+				</div>
+				<div class="swiper-slide work-p__swiper-slide">
+					<img src="./img/img/img-3.webp" loading="lazy" alt="slider-3" class="work-p__slider-img">
+				</div>
+				<div class="swiper-slide work-p__swiper-slide">
+					<img src="./img/img/img-4.webp" loading="lazy" alt="slider-4" class="work-p__slider-img">
+				</div>
+				<div class="swiper-slide work-p__swiper-slide">
+					<img src="./img/img/img-5.webp" loading="lazy" alt="slider-8" class="work-p__slider-img">
+				</div>
+				<div class="swiper-slide work-p__swiper-slide">
+					<img src="./img/img/img-6.webp" loading="lazy" alt="slider-6" class="work-p__slider-img">
+				</div>
+				<div class="swiper-slide work-p__swiper-slide">
+					<img src="./img/img/img-7.webp" loading="lazy" alt="slider-7" class="work-p__slider-img">
+				</div>
+				<div class="swiper-slide work-p__swiper-slide">
+					<img src="./img/design/design-2.webp" loading="lazy" alt="slider-8" class="work-p__slider-img">
+				</div>
+				<div class="swiper-slide work-p__swiper-slide">
+					<img src="./img/houses/houses-3.webp" loading="lazy" alt="slider-9" class="work-p__slider-img">
+				</div>
+				<div class="swiper-slide work-p__swiper-slide">
+					<img src="./img/planning/planning-2.webp" loading="lazy" alt="slider-10" class="work-p__slider-img">
+				</div>
+				<div class="swiper-slide work-p__swiper-slide">
+					<img src="./img/repair/repair-2.webp" loading="lazy" alt="slider-11" class="work-p__slider-img">
+				</div>
+				<div class="swiper-slide work-p__swiper-slide">
+					<img src="./img/all/all-4.webp" loading="lazy" alt="slider-12" class="work-p__slider-img">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 	<section class="services section">
 	<div class="services__container container">
 		<div class="services__blocs">
@@ -201,7 +268,7 @@
 			<div class="services__blocks-list">
 				<a href="./services.html" class="services__block-item">
 					<div class="services__img">
-						<img src="./img/houses/houses-3.jpg" alt="" class="services__image">
+						<img src="./img/houses/houses-3.webp" loading="lazy" alt="img-1" class="services__image">
 					</div>
 					<p class="services__text" data-i18n="services__text-1">Ремонт під ключ</p>
 					<span class="services__line"></span>
@@ -209,7 +276,7 @@
 
 				<a href="./services.html" class="services__block-item">
 					<div class="services__img">
-						<img src="./img/img/img-5.jpg" alt="" class="services__image">
+						<img src="./img/img/img-5.webp" loading="lazy" alt="img-2" class="services__image">
 					</div>
 
 					<p class="services__text" data-i18n="services__text-2">Індивідуальний дизайн</p>
@@ -218,7 +285,7 @@
 
 				<a href="./services.html" class="services__block-item">
 					<div class="services__img">
-						<img src="./img/img/img-4.png" alt="" class="services__image">
+						<img src="./img/img/img-4.png" loading="lazy" alt="img-3" class="services__image">
 					</div>
 					<p class="services__text" data-i18n="services__text-3">Проектирование зданий</p>
 					<span class="services__line"></span>
@@ -226,7 +293,7 @@
 
 				<a href="./services.html" class="services__block-item">
 					<div class="services__img">
-						<img src="./img/img/img-1.jpg" alt="" class="services__image">
+						<img src="./img/img/img-1.webp" loading="lazy" alt="img-4" class="services__image">
 					</div>
 					<p class="services__text" data-i18n="footer__item-link-5">Будівництво</p>
 					<span class="services__line"></span>
@@ -235,51 +302,37 @@
 		</div>
 	</div>
 </section>
-	<div class="container">
-	<div class="work-p__wrapper">
-		<div class="swiper work-p__swiper" id="work-p__swiper">
-			<div class="swiper-wrapper work-p__swiper-wrapper">
+	<section class="portfolio section">
+	<div class="portfolio__container container">
+		<div class="portfolio__blocks">
 
-				<div class="swiper-slide work-p__swiper-slide">
-					<img src="./img/img/img-1.jpg" alt="" class="work-p__slider-img">
+			<h2 class="portfolio__title" data-i18n="portfolio__title">Наші роботи</h2>
+			<ul class="portfolio__menu">
+				<li class="portfolio__item active" data-filter="all" data-i18n="portfolio__item-1">Усі</li>
+				<li class="portfolio__item" data-filter="design" data-i18n="portfolio__item-2">Дизайн-проект</li>
+				<li class="portfolio__item" data-filter="repair" data-i18n="portfolio__item-3">Ремонт</li>
+				<li class="portfolio__item" data-filter="planning" data-i18n="portfolio__item-4">Проектування</li>
+				<li class="portfolio__item" data-filter="houses" data-i18n="portfolio__item-5">Збудовані будинки</li>
+			</ul>
+
+			<div class="portfolio__block-imgs">
+				<div class="portfolio__block-img img-pos-1">
+					<img src="./img/img/img-3.webp" loading="lazy" alt="img" class="portfolio__img">
 				</div>
-				<div class="swiper-slide work-p__swiper-slide">
-					<img src="./img/img/img-2.png" alt="" class="work-p__slider-img">
+				<div class="portfolio__block-img img-pos-2">
+					<img src="./img/img/img-7.webp" loading="lazy" alt="img" class="portfolio__img">
 				</div>
-				<div class="swiper-slide work-p__swiper-slide">
-					<img src="./img/img/img-3.png" alt="" class="work-p__slider-img">
+				<div class="portfolio__block-img img-pos-3">
+					<img src="./img/img/img-4.webp" loading="lazy" alt="img" class="portfolio__img">
 				</div>
-				<div class="swiper-slide work-p__swiper-slide">
-					<img src="./img/img/img-4.png" alt="" class="work-p__slider-img">
-				</div>
-				<div class="swiper-slide work-p__swiper-slide">
-					<img src="./img/img/img-5.jpg" alt="" class="work-p__slider-img">
-				</div>
-				<div class="swiper-slide work-p__swiper-slide">
-					<img src="./img/img/img-6.jpg" alt="" class="work-p__slider-img">
-				</div>
-				<div class="swiper-slide work-p__swiper-slide">
-					<img src="./img/img/img-7.jpg" alt="" class="work-p__slider-img">
-				</div>
-				<div class="swiper-slide work-p__swiper-slide">
-					<img src="./img/design/design-2.jpg" alt="" class="work-p__slider-img">
-				</div>
-				<div class="swiper-slide work-p__swiper-slide">
-					<img src="./img/houses/houses-3.jpg" alt="" class="work-p__slider-img">
-				</div>
-				<div class="swiper-slide work-p__swiper-slide">
-					<img src="./img/planning/planning-2.jpg" alt="" class="work-p__slider-img">
-				</div>
-				<div class="swiper-slide work-p__swiper-slide">
-					<img src="./img/repair/repair-2.jpg" alt="" class="work-p__slider-img">
-				</div>
-				<div class="swiper-slide work-p__swiper-slide">
-					<img src="./img/all/all-4.png" alt="" class="work-p__slider-img">
+				<div class="portfolio__block-img img-pos-4">
+					<img src="./img/frame/frame-7.webp" loading="lazy" alt="img" class="portfolio__img">
 				</div>
 			</div>
+
 		</div>
 	</div>
-</div>
+</section>
 	<section class="advantages section">
 	<div class="advantages__container container">
 		<div class="advantages__blocks">
@@ -362,37 +415,6 @@
 					</div>
 				</article>
 			</div>
-		</div>
-	</div>
-</section>
-	<section class="portfolio section">
-	<div class="portfolio__container container">
-		<div class="portfolio__blocks">
-
-			<h2 class="portfolio__title" data-i18n="portfolio__title">Наші роботи</h2>
-			<ul class="portfolio__menu">
-				<li class="portfolio__item active" data-filter="all" data-i18n="portfolio__item-1">Усі</li>
-				<li class="portfolio__item" data-filter="design" data-i18n="portfolio__item-2">Дизайн-проект</li>
-				<li class="portfolio__item" data-filter="repair" data-i18n="portfolio__item-3">Ремонт</li>
-				<li class="portfolio__item" data-filter="planning" data-i18n="portfolio__item-4">Проектування</li>
-				<li class="portfolio__item" data-filter="houses" data-i18n="portfolio__item-5">Збудовані будинки</li>
-			</ul>
-
-			<div class="portfolio__block-imgs">
-				<div class="portfolio__block-img img-pos-1">
-					<img src="./img/img/img-3.png" alt=" img" class="portfolio__img">
-				</div>
-				<div class="portfolio__block-img img-pos-2">
-					<img src="./img/img/img-7.jpg" alt=" img" class="portfolio__img">
-				</div>
-				<div class="portfolio__block-img img-pos-3">
-					<img src="./img/img/img-4.png" alt=" img" class="portfolio__img">
-				</div>
-				<div class="portfolio__block-img img-pos-4">
-					<img src="./img/frame/frame-7.jpg" alt=" img" class="portfolio__img">
-				</div>
-			</div>
-
 		</div>
 	</div>
 </section>
@@ -504,8 +526,8 @@
 		</a>
 	</li>
 	<li class="menu-social__item">
-		<a href="mailto:vova4vova@mail.com" class="menu-social__link gmail" aria-label="gmail">
-			<i class="fa-brands fa-google menu-social__icon gmail"></i>
+		<a href="mailto:vova4vova@mail.com" class="menu-social__link" aria-label="gmail">
+			<i class="fa-solid fa-envelope menu-social__icon gmail"></i>
 		</a>
 	</li>
 </ul>
@@ -515,15 +537,11 @@
 	</div>
 </footer>
 
-		<!-- JSON-файл багатомовності -->
-	<script src="./js/lang.js"></script>
-	<script src="./js/lang-data.js"></script>
-
 	<!-- swiper scripts -->
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 	<!-- scripts -->
-	<script src="./js/scripts.js"></script>
+	<script src="js/scripts.min.js?v=2" defer></script>
 </body>
 
 </html>
