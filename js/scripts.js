@@ -26,7 +26,6 @@ function burgerMenu() {
 
 document.addEventListener("DOMContentLoaded", burgerMenu);
 
-
 //====== PORTFOLIO JS ======//
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -113,7 +112,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-
 const swiper = new Swiper(".main-swiper", {
   spaceBetween: 0,
   centeredSlides: true,
@@ -127,11 +125,10 @@ const swiper = new Swiper(".main-swiper", {
   },
 });
 
-
 // work-p js //
 
 const workSwiper = new Swiper(".work-p__swiper", {
-  slidesPerView: 5,
+  slidesPerView: 1,
   loop: true,
   freeMode: true,
   speed: 10000,
@@ -159,9 +156,11 @@ const workSwiper = new Swiper(".work-p__swiper", {
     600: {
       slidesPerView: 2,
     },
+    375: {
+      slidesPerView: 1,
+    },
   },
 });
-
 
 // furniture
 const swiperf = new Swiper(".furniture-swiper", {
@@ -194,9 +193,11 @@ const swiperf = new Swiper(".furniture-swiper", {
     600: {
       slidesPerView: 2,
     },
+    375: {
+      slidesPerView: 1,
+    },
   },
 });
-
 
 window.langData = {
   about__h1: {
@@ -1733,7 +1734,6 @@ window.langData = {
   },
 };
 
-
 const select = document.getElementById("language-select");
 const langData = window.langData || {};
 
@@ -1759,5 +1759,4 @@ document.addEventListener("DOMContentLoaded", () => {
   if (select) select.value = lang;
   translatePage(lang);
 });
-
 

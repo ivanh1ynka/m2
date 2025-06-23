@@ -140,7 +140,7 @@ body.locked {
 }
 
 .header__logo-img {
-  height: 60px;
+  height: 40px;
 }
 
 .header__location {
@@ -263,8 +263,8 @@ body.locked {
 }
 
 .menu-social__icon.tiktok:hover {
-  -webkit-box-shadow: 1px 1px 20px #ff0050;
-          box-shadow: 1px 1px 20px #ff0050;
+  -webkit-box-shadow: 1px 1px 20px 1px 1px rgba(255, 51, 83, 0.9882352941), -1px -1px cyan;
+          box-shadow: 1px 1px 20px 1px 1px rgba(255, 51, 83, 0.9882352941), -1px -1px cyan;
 }
 
 .menu-social__icon.viber:hover {
@@ -1338,13 +1338,13 @@ body.locked {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 40px;
+  gap: 80px;
 }
 
 .work-p__request {
@@ -1406,6 +1406,10 @@ body.locked {
   transition: 0.3s;
 }
 
+.work-p__button {
+  text-align: center;
+}
+
 .work-p__box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1464,7 +1468,6 @@ body.locked {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 200px;
   overflow: hidden;
   pointer-events: none;
 }
@@ -1484,10 +1487,12 @@ body.locked {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  min-height: 300px;
 }
 
 .work-p__slider-img {
   width: 100%;
+  aspect-ratio: 10/10;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -1507,7 +1512,7 @@ body.locked {
 
 .main-swiper {
   width: 100%;
-  height: calc(100vh - 155px);
+  height: calc(100vh - 141px);
   overflow: hidden;
   cursor: pointer;
 }
@@ -1639,12 +1644,10 @@ body.locked {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 30px;
+  gap: 20px;
 }
 
 .menu-social__link {
-  width: 32px;
-  height: 32px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1669,38 +1672,39 @@ body.locked {
       -ms-flex-align: center;
           align-items: center;
   color: #fff;
-  font-size: 24px;
+  font-size: 28px;
   line-height: 1;
+  padding: 3px;
 }
 
 .menu-social__link:hover .facebook {
-  -webkit-box-shadow: 1px 1px 20px #1877f2;
-          box-shadow: 1px 1px 20px #1877f2;
+  -webkit-box-shadow: #1877f2;
+          box-shadow: #1877f2;
   background: #1877f2;
 }
 
 .menu-social__link:hover .instagram {
   background: linear-gradient(45deg, #feda75, #d62976, #962fbf);
-  -webkit-box-shadow: 1px 1px 20px #d62976;
-          box-shadow: 1px 1px 20px #d62976;
+  -webkit-box-shadow: 0 0 10px #ffffff, 0 0 20px #ff0000, 0 0 30px #ffffff, 0 0 40px #ff0000;
+          box-shadow: 0 0 10px #ffffff, 0 0 20px #ff0000, 0 0 30px #ffffff, 0 0 40px #ff0000;
 }
 
 .menu-social__link:hover .tiktok {
-  -webkit-box-shadow: 0 0 10px #00f2ea, 0 0 20px #ff0050, 0 0 30px #00f2ea, 0 0 40px #ff0050;
-          box-shadow: 0 0 10px #00f2ea, 0 0 20px #ff0050, 0 0 30px #00f2ea, 0 0 40px #ff0050;
-  background: #ff0050;
+  text-shadow: 1px 1px rgba(255, 51, 83, 0.9882352941), -1px -1px cyan;
+  -webkit-box-shadow: 2px 2px rgba(255, 51, 83, 0.9882352941), -2px -2px cyan;
+          box-shadow: 2px 2px rgba(255, 51, 83, 0.9882352941), -2px -2px cyan;
 }
 
 .menu-social__link:hover .whatsapp {
-  -webkit-box-shadow: 1px 1px 20px #20a551;
-          box-shadow: 1px 1px 20px #20a551;
+  -webkit-box-shadow: #20a551;
+          box-shadow: #20a551;
   background: #20a551;
 }
 
 .menu-social__link:hover .gmail {
-  -webkit-box-shadow: 1px 1px 20px rgb(255, 0, 0);
-          box-shadow: 1px 1px 20px rgb(255, 0, 0);
-  background: rgb(255, 0, 0);
+  color: #fff;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 0px 2px #4285f4, -2px 0px 2px #fbbc05, 0px 2px 2px #34a853, 0px -2px 2px #ea4335, 6px 0px 6px #4285f4, -6px 0px 6px #fbbc05, 0px 6px 6px #34a853, 0px -6px 6px #ea4335;
 }
 
 .furniture {
@@ -2282,8 +2286,17 @@ body {
     padding: 5px 0;
   }
 
+  .work-p__swiper-slide {
+    min-height: 200px;
+    max-height: 250px;
+  }
+
   .main-swiper {
     height: 620px;
+  }
+
+  .menu-social__link .menu-social__icon {
+    font-size: 18px;
   }
 
   .prices__th:nth-child(2),
@@ -2333,7 +2346,7 @@ body {
 
   .menu-row__link {
     font-size: 14px;
-    text-transform: lowercase;
+    text-transform: none;
     font-weight: 400;
     letter-spacing: 0px;
   }
@@ -2443,6 +2456,7 @@ body {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    padding: 20px 0;
   }
 
   .swiper__container {
@@ -2648,7 +2662,7 @@ body {
   }
 
   .work-p__swiper-slide {
-    width: 200px;
+    max-height: 200px;
   }
 
   .swiper__container {
@@ -2714,11 +2728,13 @@ body {
   }
 
   .footer__columns {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     gap: 60px 40px;
+    padding: 40px;
   }
 
   .footer__column {
@@ -2905,11 +2921,8 @@ body {
   }
 
   .work-p__swiper-slide {
-    width: 200px;
-  }
-
-  .work-p__slider-img {
-    height: 80px;
+    min-height: 100px;
+    max-height: 250px;
   }
 
   .swiper__container {
@@ -2937,12 +2950,6 @@ body {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    gap: 20px;
-  }
-
-  .menu-social__link {
-    width: 20px;
-    height: 20px;
   }
 
   .furniture__container {
@@ -3031,10 +3038,11 @@ body {
   }
 
   .footer__columns {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    gap: 40px 20px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 60px 20px;
+    padding: 40px 10px;
   }
 
   .footer__column {
@@ -3106,7 +3114,6 @@ body {
 
   .work-p__swiper-slide {
     margin: 0 10px;
-    width: 170px;
   }
 
   .swiper__container {
@@ -3168,6 +3175,7 @@ body {
 
   .footer__columns {
     gap: 50px 20px;
+    padding: 40px 0px;
   }
 
   .footer__item-link {
