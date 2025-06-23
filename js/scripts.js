@@ -204,7 +204,6 @@ window.langData = {
     en: 'Learn more about «<span class="about__desc-m2 m2">М²</span>»',
     pl: 'Dowiedz się więcej o «<span class="about__desc-m2 m2">М²</span>»',
     ru: 'Узнайте больше о «<span class="about__desc-m2 m2">М²</span>»',
-
   },
   "about__description-1": {
     uk: '<span class="about__desc-m2 m2">М²</span> — компанія, що динамічно розвивається та надає послуги високої якості у сферах проєктування, дизайну та ремонту житлових і комерційних приміщень. Ми працюємо як з приватними клієнтами, так і з бізнесом, реалізуючи проєкти по всій Польщі.',
@@ -777,33 +776,33 @@ window.langData = {
   },
   "menu-row__link-1": {
     uk: "Про компанію",
-    en: "About Us",
+    en: "About",
     pl: "O firmie",
     ru: "О компании",
   },
   "menu-row__link-2": {
     uk: "Наші послуги",
-    en: "Our Services",
+    en: "Services",
     pl: "Nasze usługi",
     ru: "Наши услуги",
   },
   "menu-row__link-3": {
-    uk: "Портфоліо проєктів",
-    en: "Project Portfolio",
-    pl: "Portfolio projektów",
-    ru: "Портфолио проектов",
+    uk: "Портфоліо",
+    en: "Portfolio",
+    pl: "Portfolio",
+    ru: "Портфолио",
   },
   "menu-row__link-4": {
-    uk: "Ціни на послуги",
-    en: "Service Prices",
-    pl: "Cennik usług",
-    ru: "Цены на услуги",
+    uk: "Ціни",
+    en: "Prices",
+    pl: "Cennik",
+    ru: "Цены",
   },
   "menu-row__link-5": {
-    uk: "Контактна інформація",
-    en: "Contact Information",
-    pl: "Informacje kontaktowe",
-    ru: "Контактная информация",
+    uk: "Контакти",
+    en: "Contacts",
+    pl: "Łączność",
+    ru: "Контакты",
   },
   portfolio__h1: {
     uk: "Завершені об'єкти – наш досвід у деталях",
@@ -1598,7 +1597,7 @@ window.langData = {
     ru: "Монтаж электрощита",
     pl: "Montaż rozdzielnicy elektrycznej",
   },
-  "services__text-1": {
+  services__h1: {
     uk: "Комплексні рішення у сфері будівництва",
     en: "Comprehensive solutions in the construction sector",
     ru: "Комплексные решения в сфере строительства",

@@ -43,12 +43,12 @@
 
 <body>
 
-	<header class="header" id="header" aria-label="Шапка сайту">
+	<header class="header" id="header" aria-label="header">
 	<div class="header__container container">
 		<div class="header__logo-row">
 			<div class="header__logo-block">
-				<a href="./index.html" class="header__logo-link" aria-label="Перейти на головну сторінку">
-					<img src="./img/logo.svg" loading="lazy" alt="Логотип компанії" class="header__logo-img">
+				<a href="./index.html" class="header__logo-link" aria-label="main page">
+					<img src="./img/logo.svg" loading="lazy" alt="logo" class="header__logo-img">
 				</a>
 			</div>
 
@@ -84,28 +84,28 @@
 			</div>
 
 
-			<div class="header__location location" aria-label="Місцезнаходження">
+			<div class="header__location location" aria-label="location">
 				<div class="location__city">
 					<i class="location__icon fa-solid fa-location-dot" aria-hidden="true"></i>
-					<a href="./contacts.html#contact__message" class="location__map-link" aria-label="Переглянути карту об'єктів"
+					<a href="./contacts.html#contact__message" class="location__map-link" aria-label="map link"
 						data-i18n="location__map-link-1">
 						Познань </a>
 				</div>
 				<div class="location__city">
 					<i class="location__icon fa-solid fa-location-dot" aria-hidden="true"></i>
-					<a href="./contacts.html#contact__message" class="location__map-link" aria-label="Переглянути карту об'єктів"
+					<a href="./contacts.html#contact__message" class="location__map-link" aria-label="map link"
 						data-i18n="location__map-link-2">
 						Карта об'єктів
 					</a>
 				</div>
 			</div>
 
-			<div class="header__work work" aria-label="Години роботи">
+			<div class="header__work work" aria-label="work time">
 				<div class="header__work-time" data-i18n="header__work-time-1">Пн. – Пт.: з 9:00 до 20:00</div>
 				<div class="header__work-time" data-i18n="header__work-time-2">Сб.: з 10:00 до 16:00</div>
 			</div>
 
-			<div class="header__language language" aria-label="Вибір мови сайту">
+			<div class="header__language language" aria-label="language">
 				<select name="language" id="language-select" class="language__select">
 					<option class="language__option" value="en">EN</option>
 					<option class="language__option" value="pl">PL</option>
@@ -121,7 +121,7 @@
 		</div>
 
 	</div>
-	<nav class="header__navbar navbar" aria-label="Головне меню навігації">
+	<nav class="header__navbar navbar" aria-label="navbar">
 		<ul class="navbar__menu menu-row">
 			<li class="menu-row__item">
 				<a class="menu-row__link" href="./about.html" data-i18n="menu-row__link-1">Про компанію</a>
@@ -144,52 +144,6 @@
 
 
 </header>
-	
-	<div class="container">
-	<div class="work-p__wrapper">
-		<div class="swiper work-p__swiper" id="work-p__swiper">
-			<div class="swiper-wrapper work-p__swiper-wrapper">
-
-				<div class="swiper-slide work-p__swiper-slide">
-					<img src="./img/img/img-1.webp" loading="lazy" alt="slider-1" class="work-p__slider-img">
-				</div>
-				<div class="swiper-slide work-p__swiper-slide">
-					<img src="./img/img/img-2.webp" loading="lazy" alt="slider-2" class="work-p__slider-img">
-				</div>
-				<div class="swiper-slide work-p__swiper-slide">
-					<img src="./img/img/img-3.webp" loading="lazy" alt="slider-3" class="work-p__slider-img">
-				</div>
-				<div class="swiper-slide work-p__swiper-slide">
-					<img src="./img/img/img-4.webp" loading="lazy" alt="slider-4" class="work-p__slider-img">
-				</div>
-				<div class="swiper-slide work-p__swiper-slide">
-					<img src="./img/img/img-5.webp" loading="lazy" alt="slider-8" class="work-p__slider-img">
-				</div>
-				<div class="swiper-slide work-p__swiper-slide">
-					<img src="./img/img/img-6.webp" loading="lazy" alt="slider-6" class="work-p__slider-img">
-				</div>
-				<div class="swiper-slide work-p__swiper-slide">
-					<img src="./img/img/img-7.webp" loading="lazy" alt="slider-7" class="work-p__slider-img">
-				</div>
-				<div class="swiper-slide work-p__swiper-slide">
-					<img src="./img/design/design-2.webp" loading="lazy" alt="slider-8" class="work-p__slider-img">
-				</div>
-				<div class="swiper-slide work-p__swiper-slide">
-					<img src="./img/houses/houses-3.webp" loading="lazy" alt="slider-9" class="work-p__slider-img">
-				</div>
-				<div class="swiper-slide work-p__swiper-slide">
-					<img src="./img/planning/planning-2.webp" loading="lazy" alt="slider-10" class="work-p__slider-img">
-				</div>
-				<div class="swiper-slide work-p__swiper-slide">
-					<img src="./img/repair/repair-2.webp" loading="lazy" alt="slider-11" class="work-p__slider-img">
-				</div>
-				<div class="swiper-slide work-p__swiper-slide">
-					<img src="./img/all/all-4.webp" loading="lazy" alt="slider-12" class="work-p__slider-img">
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
 	
 	<section class="contact">
 	<div class="contact__container container">
@@ -242,7 +196,6 @@
 					</div>
 				</a>
 			</div>
-
 		</div>
 	</div>
 
@@ -277,6 +230,51 @@
 </ul>
 	</div>
 
+	<div class="container">
+	<div class="work-p__wrapper">
+		<div class="swiper work-p__swiper" id="work-p__swiper">
+			<div class="swiper-wrapper work-p__swiper-wrapper">
+
+				<div class="swiper-slide work-p__swiper-slide">
+					<img src="./img/img/img-1.webp" loading="lazy" alt="slider-1" class="work-p__slider-img">
+				</div>
+				<div class="swiper-slide work-p__swiper-slide">
+					<img src="./img/img/img-2.webp" loading="lazy" alt="slider-2" class="work-p__slider-img">
+				</div>
+				<div class="swiper-slide work-p__swiper-slide">
+					<img src="./img/img/img-3.webp" loading="lazy" alt="slider-3" class="work-p__slider-img">
+				</div>
+				<div class="swiper-slide work-p__swiper-slide">
+					<img src="./img/img/img-4.webp" loading="lazy" alt="slider-4" class="work-p__slider-img">
+				</div>
+				<div class="swiper-slide work-p__swiper-slide">
+					<img src="./img/img/img-5.webp" loading="lazy" alt="slider-8" class="work-p__slider-img">
+				</div>
+				<div class="swiper-slide work-p__swiper-slide">
+					<img src="./img/img/img-6.webp" loading="lazy" alt="slider-6" class="work-p__slider-img">
+				</div>
+				<div class="swiper-slide work-p__swiper-slide">
+					<img src="./img/img/img-7.webp" loading="lazy" alt="slider-7" class="work-p__slider-img">
+				</div>
+				<div class="swiper-slide work-p__swiper-slide">
+					<img src="./img/design/design-2.webp" loading="lazy" alt="slider-8" class="work-p__slider-img">
+				</div>
+				<div class="swiper-slide work-p__swiper-slide">
+					<img src="./img/houses/houses-3.webp" loading="lazy" alt="slider-9" class="work-p__slider-img">
+				</div>
+				<div class="swiper-slide work-p__swiper-slide">
+					<img src="./img/planning/planning-2.webp" loading="lazy" alt="slider-10" class="work-p__slider-img">
+				</div>
+				<div class="swiper-slide work-p__swiper-slide">
+					<img src="./img/repair/repair-2.webp" loading="lazy" alt="slider-11" class="work-p__slider-img">
+				</div>
+				<div class="swiper-slide work-p__swiper-slide">
+					<img src="./img/all/all-4.webp" loading="lazy" alt="slider-12" class="work-p__slider-img">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
 	<div class="contact__message" id="contact__message">
 		<div class="contact__container-m container">
@@ -289,7 +287,7 @@
 						class="contact__map-iframe"></iframe>
 				</div>
 				<div class="contact__right">
-					<img class="contact__right-img" src="./img/logo.svg" loading="lazy" alt="лого">
+					<img class="contact__right-img" src="./img/logo.svg" loading="lazy" alt="logo">
 					<div class="contact__block">
 						<p class="contact__desc contact__desc-m" data-i18n="contact__desc-1"> Якщо потрібно, проконсультуємо по
 							телефону або поштою
