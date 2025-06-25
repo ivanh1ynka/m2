@@ -26,6 +26,19 @@ function burgerMenu() {
 
 document.addEventListener("DOMContentLoaded", burgerMenu);
 
+const swiper = new Swiper(".main-swiper", {
+  spaceBetween: 0,
+  centeredSlides: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".main-swiper__pagination",
+    clickable: true,
+  },
+});
+
 //====== PORTFOLIO JS ======//
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -110,19 +123,6 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   });
-});
-
-const swiper = new Swiper(".main-swiper", {
-  spaceBetween: 0,
-  centeredSlides: true,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: ".main-swiper__pagination",
-    clickable: true,
-  },
 });
 
 // work-p js //

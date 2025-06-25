@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ua">
 
 <head>
   <!-- Кодування -->
@@ -33,6 +33,8 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-config" content="/browserconfig.xml">
 
+  <!-- preload -->
+  <link rel="preload" href="../img/img/img-1.webp" as="image" type="image/webp" />
 
   <!-- Open Graph (для Facebook, LinkedIn) -->
   <meta property="og:type" content="website">
@@ -312,7 +314,7 @@
 
 				<a href="./services.html" class="services__block-item">
 					<div class="services__img">
-						<img src="./img/img/img-4.png" loading="lazy" alt="services-image" class="services__image">
+						<img src="./img/img/img-4.webp" loading="lazy" alt="services-image" class="services__image">
 					</div>
 					<p class="services__text" data-i18n="services__text-3">Проектирование зданий</p>
 					<span class="services__line"></span>
@@ -565,10 +567,10 @@
 </footer>
 
   <!-- swiper scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" async></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
   <!-- scripts -->
-  <script src="js/scripts.min.js?v=2" async></script>
+<script src="js/scripts.min.js?v=2" defer></script>
 </body>
 
 </html>
