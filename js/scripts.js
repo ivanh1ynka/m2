@@ -24,7 +24,16 @@ function burgerMenu() {
   });
 }
 
-document.addEventListener("DOMContentLoaded", burgerMenu);
+document.addEventListener("DOMContentLoaded", () => {
+  burgerMenu();
+
+  const languageSelect = document.getElementById("language-select");
+  if (languageSelect) {
+    languageSelect.addEventListener("change", () => {
+      languageSelect.blur(); // знімає фокус після вибору мови
+    });
+  }
+});
 
 const swiper = new Swiper(".main-swiper", {
   spaceBetween: 0,
@@ -919,6 +928,12 @@ window.langData = {
     en: "from",
     ru: "от",
     pl: "od",
+  },
+  "prices__td-currency-1": {
+    uk: "зл.",
+    en: "pln",
+    ru: "зл.",
+    pl: "zł.",
   },
   "prices__td-1": {
     uk: "Виконання технічного проекту на ремонт квартири",
