@@ -227,6 +227,13 @@ window.langData = {
     pl: "Nasz zespół to połączenie doświadczonych specjalistów, kreatywnych projektantów i nowoczesnych inżynierów, którzy tworzą niezawodne, estetyczne i funkcjonalne rozwiązania w budownictwie i aranżacji wnętrz.",
     ru: "Наша команда — это объединение опытных специалистов, креативных дизайнеров и современных инженеров, создающих надежные, эстетичные и функциональные решения в строительстве и дизайне интерьера.",
   },
+  
+  "about__subtitle-1": {
+    uk: 'Переваги роботи з <span class="about__desc-m2 m2">м²</span>:',
+    en: 'Advantages of working with <span class="about__desc-m2 m2">м²</span>:',
+    pl: 'Zalety robotów <span class="about__desc-m2 m2">м²</span>:',
+    ru: 'Преимущества работы с <span class="about__desc-m2 m2">м²</span>:',
+  },
   about__title: {
     uk: "— там, де ідея стає реальністю",
     en: "— where an idea becomes reality",
@@ -1741,11 +1748,11 @@ window.langData = {
     ru: "Владимир Максимик",
     pl: "Włodzimierz Maksymyk",
   },
-  work__span: {
-    uk: "генеральний директор",
+  "work-p__span": {
+    uk: "Генеральний директор",
     en: "General Director",
-    ru: "генеральный директор",
-    pl: "dyrektor generalny",
+    ru: "Генеральный директор",
+    pl: "Dyrektor generalny",
   },
 };
 
